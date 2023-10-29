@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "LINESeedSans";
+  src: url("/fonts/LINESeedSans_W_Rg.woff2") format("woff2");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LINESeedSans";
+  src: url("/fonts/LINESeedSans_W_Bd.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "LINESeedSansTH";
+  src: url("/fonts/LINESeedSansTH_W_Rg.woff2") format("woff2");
+  font-weight: normal;
+}
+
+:root {
+  --main-background-color: #1e2022;
+  --main-text-color: #f0f5f9;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: "LINESeedSans", "LINESeedSansTH";
+  background-color: var(--main-background-color);
+  color: var(--main-text-color);
+}
+
+.border {
+  border-top: solid 1px var(--main-text-color);
+}
