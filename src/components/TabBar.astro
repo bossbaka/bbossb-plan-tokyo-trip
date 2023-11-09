@@ -3,12 +3,12 @@ import { Icon } from "astro-icon";
 
 const tab = [
   {
-    title: "การเดินทาง",
-    icon: "mdi:train",
-  },
-  {
     title: "สถานที่",
     icon: "mdi:map-marker",
+  },
+  {
+    title: "การเดินทาง",
+    icon: "mdi:train",
   },
   {
     title: "ค่าใช้จ่าย",
@@ -21,7 +21,7 @@ const tab = [
 ];
 ---
 
-<div class="tabbar-wrap border">
+<div class="tabbar-wrap border-top">
   {
     tab.map((item) => (
       <div class="tabbar-item">
@@ -50,6 +50,6 @@ const tab = [
     padding: 4px 8px;
   }
   .tabbar-item div {
-    font-size: 0.6rem;
+    /* font-size: 1rem; */
   }
 </style>

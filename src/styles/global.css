@@ -23,14 +23,23 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
+  overflow: unset;
 }
 
 html {
   font-family: "LINESeedSans", "LINESeedSansTH";
   background-color: var(--main-background-color);
   color: var(--main-text-color);
+  font-size: 13.5px;
 }
 
-.border {
+.border-top {
   border-top: solid 1px var(--main-text-color);
+  height: 5rem;
+}
+
+.border-bottom {
+  border-bottom: solid 1px var(--main-text-color);
+  height: 5rem;
 }

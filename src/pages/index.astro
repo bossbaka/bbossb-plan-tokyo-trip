@@ -1,16 +1,38 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+const cardData = [
+  {
+    title: "title1",
+    body: "body1",
+    picture: "",
+  },
+  {
+    title: "title2",
+    body: "body2",
+    picture: "",
+  },
+];
 ---
 
 <Layout title="Trip Tokyo with Mother">
-  <div class="body">Body</div>
+  <div class="body">
+    {
+      cardData.map((item) => (
+        <Card title={item.title} body={item.body} picture={item.picture} />
+      ))
+    }
+  </div>
 </Layout>
 
 <style>
   .body {
     flex: 1 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
+    margin: 20px;
   }
 </style>
