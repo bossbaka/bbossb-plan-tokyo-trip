@@ -36,10 +36,10 @@ html {
 
 .border-top {
   border-top: solid 1px var(--main-text-color);
-  height: 5rem;
+  padding: 15px 0 15px 0;
 }
 
 .border-bottom {
   border-bottom: solid 1px var(--main-text-color);
-  height: 5rem;
+  padding: 15px 0 15px 0;
 }

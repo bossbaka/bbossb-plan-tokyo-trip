@@ -21,15 +21,17 @@ const tab = [
 ];
 ---
 
-<div class="tabbar-wrap border-top">
-  {
-    tab.map((item) => (
-      <div class="tabbar-item">
-        <Icon name={item.icon} width="24" height="24" />
-        <div>{item.title}</div>
-      </div>
-    ))
-  }
+<div class="border-top">
+  <div class="tabbar-wrap">
+    {
+      tab.map((item) => (
+        <div class="tabbar-item">
+          <Icon name={item.icon} width="24" height="24" />
+          <div>{item.title}</div>
+        </div>
+      ))
+    }
+  </div>
 </div>
 
 <style>

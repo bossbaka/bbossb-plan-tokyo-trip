@@ -2,16 +2,20 @@
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 
+import myImage from "../assets/kentaro-toma-ZSszWRLLlbg-unsplash.jpg";
+
 const cardData = [
   {
     title: "title1",
     body: "body1",
-    picture: "",
+    picture: myImage,
+    alt: "kawagoe",
   },
   {
     title: "title2",
     body: "body2",
-    picture: "",
+    picture: myImage,
+    alt: "",
   },
 ];
 ---
@@ -20,7 +24,12 @@ const cardData = [
   <div class="body">
     {
       cardData.map((item) => (
-        <Card title={item.title} body={item.body} picture={item.picture} />
+        <Card
+          title={item.title}
+          body={item.body}
+          picture={item.picture}
+          alt={item.alt}
+        />
       ))
     }
   </div>
