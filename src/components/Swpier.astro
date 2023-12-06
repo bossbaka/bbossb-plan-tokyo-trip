@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets";
+
+const { swiperData } = Astro.props;
+---
+
+{
+  swiperData.map((items: any) => (
+    <div>
+      <p>{items.day}</p>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          {items.locations.map((item: any) => (
+            <div class="swiper-slide">
+              {item.picture !== "" ? (
+                <Image src={item.picture} alt={item.picture} />
+              ) : (
+                <div> on images </div>
+              )}
+              <div class="box-shadow">
+                <h4>{item.location_name}</h4>
+                <button><a href=`/${item.location_name}`>More</a></button>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev" ></div>
+        <div class="swiper-pagination" ></div>
+        </div>
+    </div>
+  ))
+}
+
+<style>
+  :root {
+    --swiper-navigation-size: 24px;
+  }
+
+  .swiper {
+width: 320px;
+
+    border-radius: 8px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #fff;
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-pagination-fraction {
+    font-size: 12px;
+  }
+
+  .box-shadow {
+    text-align: left;
+    position: absolute;
+    padding: 30px 20px;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    background: linear-gradient(transparent, rgb(0, 0, 0));
+  }
+</style>
+
+<script is:inline>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "fade",
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>

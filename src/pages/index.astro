@@ -1,37 +1,94 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
 
-import myImage from "../assets/kentaro-toma-ZSszWRLLlbg-unsplash.jpg";
+import KamakurakokoMaeImage from "../assets/tripp-ho-3mGGMau_4c8-unsplash.jpg";
+import KurazukurinoMachinamiImage from "../assets/kentaro-toma-ZSszWRLLlbg-unsplash.jpg";
+import KawagoeHikawaShrineImage from "../assets/letian-zhang-RGsMFx-9Md0-unsplash.jpg";
+import ShingashiRiverbankImage from "../assets/nguyen-tp-hai-Mq9mdogzFBs-unsplash.jpg";
+import OishiParkCafeImage from "../assets/owen-roth-TPycWrCxxsc-unsplash.jpg";
+import MtFujiPanoramaRopewayImage from "../assets/01.jpg";
+import NakaMeguroStaImage from "../assets/pexels-ronny-siegel-11638591.jpg";
+import GalaYuzawaImage from "../assets/Snow-Enjoyment-Park.jpg";
 
-const cardData = [
+import Swpier from "../components/Swpier.astro";
+
+const swiperData = [
   {
-    title: "title1",
-    body: "body1",
-    picture: myImage,
-    alt: "kawagoe",
+    day: "Sunday, 24 Mar. 2024",
+    name: "Kamakura, Kanagawa",
+    locations: [
+      {
+        location_name: "Kamakurakōkō-Mae Station",
+        picture: KamakurakokoMaeImage,
+      },
+    ],
   },
   {
-    title: "title2",
-    body: "body2",
-    picture: myImage,
-    alt: "",
+    day: "Monday, 25 Mar. 2024",
+    name: "Kawagoe, Saitama",
+    locations: [
+      {
+        location_name: "Kurazukuri no Machinami",
+        picture: KurazukurinoMachinamiImage,
+      },
+      {
+        location_name: "Kawagoe Hikawa Shrine",
+        picture: KawagoeHikawaShrineImage,
+      },
+      {
+        location_name: "Shingashi Riverbank",
+        picture: ShingashiRiverbankImage,
+      },
+    ],
+  },
+  {
+    day: "Tuseday, 26 Mar. 2024",
+    name: "Fujikawaguchiko, Yamanashi",
+    locations: [
+      {
+        location_name: "Oishi Park Cafe",
+        picture: OishiParkCafeImage,
+      },
+      {
+        location_name: "Mt. Fuji Panorama Ropeway",
+        picture: MtFujiPanoramaRopewayImage,
+      },
+      {
+        location_name: "Naka-meguro Sta.",
+        picture: NakaMeguroStaImage,
+      },
+    ],
+  },
+  {
+    day: "Wednesday, 27 Mar. 2024",
+    name: "Niigata and Saitama",
+    locations: [
+      {
+        location_name: "Gala Yuzawa",
+        picture: GalaYuzawaImage,
+      },
+      {
+        location_name: "Kumagaya Sakura Tsutsumi ",
+        picture: "",
+      },
+    ],
+  },
+  {
+    day: "Thursday, 28 Mar. 2024",
+    name: "Kanagawa",
+    locations: [
+      {
+        location_name: "Shukugawara Nikaryō Waterway",
+        picture: "",
+      },
+    ],
   },
 ];
 ---
 
 <Layout title="Trip Tokyo with Mother">
   <div class="body">
-    {
-      cardData.map((item) => (
-        <Card
-          title={item.title}
-          body={item.body}
-          picture={item.picture}
-          alt={item.alt}
-        />
-      ))
-    }
+    <Swpier swiperData={swiperData} />
   </div>
 </Layout>
 

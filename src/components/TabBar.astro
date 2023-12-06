@@ -5,34 +5,42 @@ const tab = [
   {
     title: "สถานที่",
     icon: "mdi:map-marker",
+    path: "/",
   },
   {
     title: "การเดินทาง",
     icon: "mdi:train",
+    path: "/travel/",
   },
   {
     title: "ค่าใช้จ่าย",
     icon: "mdi:currency-jpy",
+    path: "/currency/",
   },
   {
     title: "คำแนะนำ",
     icon: "mdi:information-variant",
+    path: "/information/",
   },
 ];
 ---
 
-<div class="border-top">
-  <div class="tabbar-wrap">
-    {
-      tab.map((item) => (
-        <div class="tabbar-item">
-          <Icon name={item.icon} width="24" height="24" />
-          <div>{item.title}</div>
-        </div>
-      ))
-    }
+<footer>
+  <div class="border-top">
+    <div class="tabbar-wrap">
+      {
+        tab.map((item) => (
+          <div class="tabbar-item">
+            <a href={item.path}>
+              <Icon name={item.icon} width="24" height="24" />
+              <div>{item.title}</div>
+            </a>
+          </div>
+        ))
+      }
+    </div>
   </div>
-</div>
+</footer>
 
 <style>
   .tabbar-wrap {
