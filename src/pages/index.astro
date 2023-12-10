@@ -20,6 +20,7 @@ const swiperData = [
       {
         location_name: "Kamakurakōkō-Mae Station",
         picture: KamakurakokoMaeImage,
+        path: "/locations/kamakurakoko_mae_station",
       },
     ],
   },
@@ -30,14 +31,17 @@ const swiperData = [
       {
         location_name: "Kurazukuri no Machinami",
         picture: KurazukurinoMachinamiImage,
+        path: "/locations/kurazukuri_no_machinami",
       },
       {
         location_name: "Kawagoe Hikawa Shrine",
         picture: KawagoeHikawaShrineImage,
+        path: "/locations/kawagoe_hikawa_shrine",
       },
       {
         location_name: "Shingashi Riverbank",
         picture: ShingashiRiverbankImage,
+        path: "/locations/shingashi_riverbank",
       },
     ],
   },
@@ -48,14 +52,17 @@ const swiperData = [
       {
         location_name: "Oishi Park Cafe",
         picture: OishiParkCafeImage,
+        path: "/locations/shingashi_riverbank",
       },
       {
         location_name: "Mt. Fuji Panorama Ropeway",
         picture: MtFujiPanoramaRopewayImage,
+        path: "/locations/mtfuji_panorama_ropeway",
       },
       {
         location_name: "Naka-meguro Sta.",
         picture: NakaMeguroStaImage,
+        path: "/locations/naka_meguro_sta",
       },
     ],
   },
@@ -66,10 +73,12 @@ const swiperData = [
       {
         location_name: "Gala Yuzawa",
         picture: GalaYuzawaImage,
+        path: "/locations/gala_yuzawa",
       },
       {
-        location_name: "Kumagaya Sakura Tsutsumi ",
+        location_name: "Kumagaya Sakura Tsutsumi",
         picture: "",
+        path: "/locations/kumagaya_sakura_tsutsumi",
       },
     ],
   },
@@ -80,6 +89,7 @@ const swiperData = [
       {
         location_name: "Shukugawara Nikaryō Waterway",
         picture: "",
+        path: "/locations/shukugawara_nikaryo_waterway",
       },
     ],
   },
@@ -87,18 +97,7 @@ const swiperData = [
 ---
 
 <Layout title="Trip Tokyo with Mother">
-  <div class="body">
-    <Swpier swiperData={swiperData} />
-  </div>
+  <Swpier swiperData={swiperData} />
 </Layout>
 
-<style>
-  .body {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 20px;
-  }
-</style>
+<style></style>

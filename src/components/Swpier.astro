@@ -8,26 +8,29 @@ const { swiperData } = Astro.props;
   swiperData.map((items: any) => (
     <div>
       <p>{items.day}</p>
+
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           {items.locations.map((item: any) => (
             <div class="swiper-slide">
-              {item.picture !== "" ? (
+              {item.picture !== "" && (
                 <Image src={item.picture} alt={item.picture} />
-              ) : (
-                <div> on images </div>
               )}
               <div class="box-shadow">
                 <h4>{item.location_name}</h4>
-                <button><a href=`/${item.location_name}`>More</a></button>
+                <button>
+                  <a href=`${item.path}` >More</a>
+                </button>
               </div>
+              {item.picture == "" && <div> No Image</div>}
             </div>
           ))}
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev" ></div>
-        <div class="swiper-pagination" ></div>
-        </div>
+
+        <div class="swiper-button-next" />
+        <div class="swiper-button-prev" />
+        <div class="swiper-pagination" />
+      </div>
     </div>
   ))
 }
@@ -38,8 +41,8 @@ const { swiperData } = Astro.props;
   }
 
   .swiper {
-width: 320px;
-
+    width: 100%;
+    height: 320px;
     border-radius: 8px;
   }
 
@@ -50,6 +53,7 @@ width: 320px;
 
   .swiper-slide img {
     width: 100%;
+    height: 100%; 
     object-fit: cover;
   }
 

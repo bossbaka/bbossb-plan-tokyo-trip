@@ -29,7 +29,9 @@ const { title } = Astro.props;
   </head>
   <body class="app">
     <TopBar />
-    <slot />
+    <div class="body">
+      <slot />
+    </div>
     <TabBar />
   </body>
 </html>
@@ -39,5 +41,12 @@ const { title } = Astro.props;
     height: 100vh;
     display: flex;
     flex-direction: column;
+  }
+  .body {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
   }
 </style>
