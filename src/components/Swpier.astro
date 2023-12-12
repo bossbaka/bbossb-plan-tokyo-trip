@@ -4,11 +4,10 @@ import { Image } from "astro:assets";
 const { swiperData } = Astro.props;
 ---
 
-{
-  swiperData.map((items: any) => (
+<div>
+{ swiperData.map((items: any) => (
     <div>
       <p>{items.day}</p>
-
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           {items.locations.map((item: any) => (
@@ -17,10 +16,14 @@ const { swiperData } = Astro.props;
                 <Image src={item.picture} alt={item.picture} />
               )}
               <div class="box-shadow">
-                <h4>{item.location_name}</h4>
+                <div> 
+                <h3>{item.location_name}</h3>
+                <a href=`${item.path}` >
                 <button>
-                  <a href=`${item.path}` >More</a>
+                  ดูรายละเอียดเพิ่มเติม
                 </button>
+              </a>
+                </div>
               </div>
               {item.picture == "" && <div> No Image</div>}
             </div>
@@ -32,17 +35,22 @@ const { swiperData } = Astro.props;
         <div class="swiper-pagination" />
       </div>
     </div>
-  ))
-}
+  ))}
+</div>
 
 <style>
+  p {
+    margin: 10px 0px;
+  }
+
+
   :root {
     --swiper-navigation-size: 24px;
   }
 
   .swiper {
     width: 100%;
-    height: 320px;
+    height: 300px;
     border-radius: 8px;
   }
 
@@ -68,8 +76,20 @@ const { swiperData } = Astro.props;
     width: 100%;
     height: auto;
     bottom: 0;
-    background: linear-gradient(transparent, rgb(0, 0, 0));
+    background: linear-gradient(rgb(0 0 0 / 5%), rgb(0, 0, 0));
   }
+
+  .box-shadow div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .box-shadow div button  {
+    border-radius: 8px;
+  }
+
 </style>
 
 <script is:inline>

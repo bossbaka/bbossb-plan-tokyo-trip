@@ -1,4 +1,6 @@
 ---
+// @ts-nocheck
+
 import Layout from "../layouts/Layout.astro";
 
 import KamakurakokoMaeImage from "../assets/tripp-ho-3mGGMau_4c8-unsplash.jpg";
@@ -11,6 +13,7 @@ import NakaMeguroStaImage from "../assets/pexels-ronny-siegel-11638591.jpg";
 import GalaYuzawaImage from "../assets/Snow-Enjoyment-Park.jpg";
 
 import Swpier from "../components/Swpier.astro";
+import swiperData1 from "../data/locations_data.json";
 
 const swiperData = [
   {
@@ -97,7 +100,7 @@ const swiperData = [
 ---
 
 <Layout title="Trip Tokyo with Mother">
-  <Swpier swiperData={swiperData} />
+  <Swpier swiperData={swiperData1} />
 </Layout>
 
 <style></style>

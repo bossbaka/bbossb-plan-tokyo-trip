@@ -38,26 +38,6 @@ body {
   padding-top: 72px;
 }
 
-.border-top {
-  border-top: solid 1px var(--main-text-color);
-  padding: 15px 0 15px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: var(--main-background-color);
-}
-
-.border-bottom {
-  border-bottom: solid 1px var(--main-text-color);
-  padding: 15px 0 15px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 99;
-  background-color: var(--main-background-color);
-}
-
 footer {
   padding-top: 88px;
 }
@@ -67,4 +47,40 @@ footer a {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
+}
+
+a {
+  color: var(--main-text-color);
+  text-decoration: none;
+}
+
+button {
+  font-family: "LINESeedSans", "LINESeedSansTH";
+  color: var(--main-text-color);
+  background-color: rgb(106 181 198 / 80%);
+  border: none;
+  padding: 5px 12px;
+  display: inline-block;
+  cursor: pointer;
+  margin: 10px 0px;
+}
+
+.border-top {
+  border-top: solid 1px var(--main-text-color);
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--main-background-color);
+}
+
+.border-bottom {
+  border-bottom: solid 1px var(--main-text-color);
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background-color: var(--main-background-color);
 }
