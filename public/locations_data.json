@@ -1,0 +1,83 @@
+
+[
+  {
+    "day": "Sunday, 24 Mar. 2024",
+    "name": "Kamakura, Kanagawa",
+    "locations": [
+      {
+        "location_name": "Kamakurakōkō-Mae Station",
+        "picture": "/images/tripp-ho-3mGGMau_4c8-unsplash.jpg",
+        "path": "/locations/kamakurakoko_mae_station"
+      }
+    ]
+  },
+  {
+    "day": "Monday, 25 Mar. 2024",
+    "name": "Kawagoe, Saitama",
+    "locations": [
+      {
+        "location_name": "Kurazukuri no Machinami",
+        "picture": "/images/kentaro-toma-ZSszWRLLlbg-unsplash.jpg",
+        "path": "/locations/kurazukuri_no_machinami"
+      },
+      {
+        "location_name": "Kawagoe Hikawa Shrine",
+        "picture": "/images/letian-zhang-RGsMFx-9Md0-unsplash.jpg",
+        "path": "/locations/kawagoe_hikawa_shrine"
+      },
+      {
+        "location_name": "Shingashi Riverbank",
+        "picture": "/images/nguyen-tp-hai-Mq9mdogzFBs-unsplash.jpg",
+        "path": "/locations/shingashi_riverbank"
+      }
+    ]
+  },
+  {
+    "day": "Tuseday, 26 Mar. 2024",
+    "name": "Fujikawaguchiko, Yamanashi",
+    "locations": [
+      {
+        "location_name": "Oishi Park Cafe",
+        "picture": "/images/owen-roth-TPycWrCxxsc-unsplash.jpg",
+        "path": "/locations/shingashi_riverbank"
+      },
+      {
+        "location_name": "Mt. Fuji Panorama Ropeway",
+        "picture": "/images/01.jpg",
+        "path": "/locations/mtfuji_panorama_ropeway"
+      },
+      {
+        "location_name": "Naka-meguro Sta.",
+        "picture": "/images/pexels-ronny-siegel-11638591.jpg",
+        "path": "/locations/naka_meguro_sta"
+      }
+    ]
+  },
+  {
+    "day": "Wednesday, 27 Mar. 2024",
+    "name": "Niigata and Saitama",
+    "locations": [
+      {
+        "location_name": "Gala Yuzawa",
+        "picture": "/images/Snow-Enjoyment-Park.jpg",
+        "path": "/locations/gala_yuzawa"
+      },
+      {
+        "location_name": "Kumagaya Sakura Tsutsumi",
+        "picture": "",
+        "path": "/locations/kumagaya_sakura_tsutsumi"
+      }
+    ]
+  },
+  {
+    "day": "Thursday, 28 Mar. 2024",
+    "name": "Kanagawa",
+    "locations": [
+      {
+        "location_name": "Shukugawara Nikaryō Waterway",
+        "picture": "",
+        "path": "/locations/shukugawara_nikaryo_waterway"
+      }
+    ]
+  }
+]

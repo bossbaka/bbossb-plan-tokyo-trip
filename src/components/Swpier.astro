@@ -5,37 +5,39 @@ const { swiperData } = Astro.props;
 ---
 
 <div>
-{ swiperData.map((items: any) => (
-    <div>
-      <p>{items.day}</p>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          {items.locations.map((item: any) => (
-            <div class="swiper-slide">
-              {item.picture !== "" && (
-                <Image src={item.picture} alt={item.picture} />
-              )}
-              <div class="box-shadow">
-                <div> 
-                <h3>{item.location_name}</h3>
-                <a href=`${item.path}` >
-                <button>
-                  ดูรายละเอียดเพิ่มเติม
-                </button>
-              </a>
+  {
+    swiperData.map((items: any) => (
+      <div>
+        <p>{items.day}</p>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            {items.locations.map((item: any) => (
+              <div class="swiper-slide">
+                {item.picture !== "" && (
+                  <Image src={item.picture} alt={item.picture} />
+                )}
+                <div class="box-shadow">
+                  <div>
+                    <h3>{item.location_name}</h3>
+                    <button>
+                      <a href={`${item.path}`}>ดูรายละเอียดเพิ่มเติม</a>
+                    </button>
+                  </div>
                 </div>
+                {item.picture == "" && (
+                  <div class="box-shadow empty-image"> No Image</div>
+                )}
               </div>
-              {item.picture == "" && <div> No Image</div>}
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
 
-        <div class="swiper-button-next" />
-        <div class="swiper-button-prev" />
-        <div class="swiper-pagination" />
+          <div class="swiper-button-next" />
+          <div class="swiper-button-prev" />
+          <div class="swiper-pagination" />
+        </div>
       </div>
-    </div>
-  ))}
+    ))
+  }
 </div>
 
 <style>
@@ -43,6 +45,9 @@ const { swiperData } = Astro.props;
     margin: 10px 0px;
   }
 
+  button {
+    font-size: 1rem;
+  }
 
   :root {
     --swiper-navigation-size: 24px;
@@ -61,7 +66,7 @@ const { swiperData } = Astro.props;
 
   .swiper-slide img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
   }
 
@@ -86,10 +91,18 @@ const { swiperData } = Astro.props;
     justify-content: space-between;
   }
 
-  .box-shadow div button  {
+  .box-shadow div button {
     border-radius: 8px;
   }
 
+  .empty-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: -99;
+    background: black;
+  }
 </style>
 
 <script is:inline>

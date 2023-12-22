@@ -1,7 +1,22 @@
 ---
+import List from "../components/List.astro";
 import Layout from "../layouts/Layout.astro";
+
+const data = [
+  {
+    name: "สถานที่พัก",
+  },
+  {
+    name: "สนามบิน",
+  },
+  {
+    name: "ห้องน้ำ",
+  },
+];
 ---
 
 <Layout title="Information">
-  <div>information</div>
+  <ul>
+    {data.map((item) => <List name={item.name} />)}
+  </ul>
 </Layout>

@@ -1,30 +1,96 @@
 ---
 // @ts-nocheck
+
+const data = [
+  {
+    days: "Sunday, 24 Mar. 2024",
+    detail: [
+      {
+        name: "สถานี Akabane",
+        imagepath:
+          "https://www.jreast.co.jp/e/stations/img/floormap/0034_1f-2f_en.png",
+      },
+      {
+        name: "สถานี Akabane",
+        imagepath:
+          "https://www.jreast.co.jp/e/stations/img/floormap/0034_1f-2f_en.png",
+      },
+    ],
+  },
+  {
+    days: "Monday, 25 Mar. 2024",
+    detail: [
+      {
+        name: "สถานี ",
+        imagepath: "",
+      },
+    ],
+  },
+];
 ---
 
-<details name="my-accordion">
-  <summary>Summary 1</summary>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus
-    quibusdam, eum, aperiam sunt non dolorum pariatur molestias suscipit aut
-    quia quas vero, illo quisquam nostrum sequi excepturi. Aliquam, obcaecati?
-  </p>
-</details>
+<div>
+  {
+    data.map((items) => (
+      <>
+        <p class="accordion-p">{items.days}</p>
+        {items.detail.map((item) => (
+          <details name="my-accordion">
+            <summary>{item.name}</summary>
+            <p>
+              {item.imagepath !== "" ? (
+                <img
+                  src={item.imagepath}
+                  alt={item.name}
+                  width="50"
+                  height="50"
+                />
+              ) : (
+                <div> No image </div>
+              )}
+            </p>
+          </details>
+        ))}
+      </>
+    ))
+  }
+</div>
 
-<details name="my-accordion">
-  <summary>Summary 2</summary>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus
-    quibusdam, eum, aperiam sunt non dolorum pariatur molestias suscipit aut
-    quia quas vero, illo quisquam nostrum sequi excepturi. Aliquam, obcaecati?
-  </p>
-</details>
+<style>
+  summary {
+    background-color: rgb(132 132 132 / 27%);
+    color: white;
+    cursor: pointer;
+    padding: 13px;
+  }
 
-<details name="my-accordion">
-  <summary>Summary 3</summary>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas delectus
-    quibusdam, eum, aperiam sunt non dolorum pariatur molestias suscipit aut
-    quia quas vero, illo quisquam nostrum sequi excepturi. Aliquam, obcaecati?
-  </p>
-</details>
+  details {
+    margin: 3px 0px;
+    border-radius: 10px;
+    border: 1px solid #f0f5f9;
+    padding: 3px;
+  }
+
+  details[open] summary {
+    background-color: #f0f5f9;
+    color: black;
+    border-radius: 5px;
+  }
+  .accordion-p {
+    margin: 10px 0;
+  }
+  details p {
+    padding: 10px 15px;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  details div {
+    text-align: center;
+    padding-bottom: 15px;
+  }
+</style>
