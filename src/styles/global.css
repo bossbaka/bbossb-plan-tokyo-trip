@@ -67,7 +67,7 @@ button {
 
 .border-top {
   border-top: solid 1px var(--main-text-color);
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -77,7 +77,7 @@ button {
 
 .border-bottom {
   border-bottom: solid 1px var(--main-text-color);
-  padding: 20px;
+  padding: 10px;
   position: fixed;
   top: 0;
   width: 100%;
