@@ -1,48 +1,89 @@
 ---
 import { Image } from "astro:assets";
+import Modal from "./Modal.astro";
 
 const { swiperData } = Astro.props;
+
+const updatedSwiperData = swiperData.map((item: any, index: number) => item);
+
+updatedSwiperData.push({
+  day: "Thursday, 24 Mar. 2024",
+  detailmore: `
+    <div>
+    test
+    </div>
+  `,
+});
 ---
 
 <div>
   {
-    swiperData.map((items: any) => (
+    swiperData.map((items: any, index: number) => (
       <div>
-        <p>{items.day}</p>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            {items.locations.map((item: any) => (
-              <div class="swiper-slide">
-                {item.picture !== "" && (
-                  <Image src={item.picture} alt={item.picture} />
-                )}
-                <div class="box-shadow">
-                  <div>
-                    <h3>{item.location_name}</h3>
-                    <button>
-                      <a href={`${item.path}`}>ดูรายละเอียดเพิ่มเติม</a>
-                    </button>
-                  </div>
-                </div>
-                {item.picture == "" && (
-                  <div class="box-shadow empty-image"> No Image</div>
-                )}
-              </div>
-            ))}
+        <h4>{items.day}</h4>
+        <p>
+          <span class="tag-time">เวลา {items.fromtime}</span>
+          <span>{items.planfrom}</span>
+          <span class="tag-duration">{items.duration}</span>
+          <span>{items.planto}</span>
+          <span class="tag-time">เวลา {items.totime}</span>
+          <div class="button">
+            <Modal
+              items={items}
+              key={index}
+              updatedSwiperData={updatedSwiperData}
+            />
           </div>
+        </p>
 
-          <div class="swiper-button-next" />
-          <div class="swiper-button-prev" />
-          <div class="swiper-pagination" />
+        <div class="box-img">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              {items.locations.map((item: any) => (
+                <div class="swiper-slide">
+                  {item.picture !== "" && (
+                    <Image src={item.picture} alt={item.picture} />
+                  )}
+                  <div class="box-shadow">
+                    <div>
+                      <h3>{item.location_name}</h3>
+                      <button>
+                        <a href={`${item.path}`}>ข้อมูลสถานที่</a>
+                      </button>
+                    </div>
+                  </div>
+                  {item.picture == "" && (
+                    <div class="box-shadow empty-image"> No Image</div>
+                  )}
+                </div>
+              ))}
+            </div>
+
+            <div class="swiper-button-next" />
+            <div class="swiper-button-prev" />
+            <div class="swiper-pagination" />
+          </div>
         </div>
+        {index === swiperData.length - 1 ? null : <hr />}
       </div>
     ))
   }
 </div>
 
 <style>
+  .box-img {
+    margin: 0px 20px;
+  }
+
+  h4 {
+    margin: 15px 20px 0 20px;
+  }
+  hr {
+    margin: 20px 0;
+    border: 1px solid #525252a6;
+  }
   p {
-    margin: 10px 0px;
+    margin: 10px 20px;
   }
 
   button {
@@ -55,7 +96,7 @@ const { swiperData } = Astro.props;
 
   .swiper {
     width: 100%;
-    height: 300px;
+    height: 250px;
     border-radius: 8px;
   }
 
@@ -102,6 +143,12 @@ const { swiperData } = Astro.props;
     top: 0;
     z-index: -99;
     background: black;
+  }
+
+  .button {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
   }
 </style>
 

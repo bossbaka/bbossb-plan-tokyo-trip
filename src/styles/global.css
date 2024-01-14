@@ -26,13 +26,16 @@
   margin: 0;
   box-sizing: border-box;
   overflow: unset;
+  /* :has(:popover-open) {
+    overflow: hidden;
+  } */
 }
 
 html {
-  font-family: "LINESeedSans", "LINESeedSansTH";
+  font-family: "LINESeedSans", "LINESeedSansTH", "LINESeedSansJP";
   background-color: var(--main-background-color);
   color: var(--main-text-color);
-  font-size: 13.5px;
+  font-size: 14px;
 }
 
 body {
@@ -84,4 +87,92 @@ button {
   z-index: 99;
   background-color: var(--main-background-color);
   text-align: center;
+}
+
+.tag-time,
+.tag-line,
+.detail-map,
+.open-map,
+.tag-duration {
+  border-radius: 5px;
+  padding: 3px 8px;
+  margin: 3px;
+  line-height: 1.9;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+.tag-time {
+  background-color: #4f80d1;
+}
+
+.tag-duration {
+  background-color: #4b4a4a;
+}
+
+.detail-map {
+  background-color: #000;
+}
+
+.open-map {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.ks {
+  background-color: rgb(242, 127, 30);
+}
+.a {
+  background-color: rgb(242, 112, 111);
+}
+.jo {
+  background-color: rgb(0, 113, 197);
+}
+.en {
+  background-color: rgb(0, 91, 63);
+}
+.jt {
+  background-color: rgb(242, 128, 27);
+}
+.ueno {
+  background-color: rgb(157, 31, 162);
+}
+.ja {
+  background-color: rgb(70, 165, 115);
+}
+.tj {
+  background-color: rgb(0, 0, 153);
+}
+
+.jb {
+  background-color: rgb(242, 201, 0);
+}
+
+.jc {
+  background-color: rgb(242, 82, 16);
+}
+
+.fuji {
+  background-color: rgb(0, 94, 209);
+}
+
+.f {
+  background-color: rgb(156, 94, 49);
+}
+
+.ty {
+  background-color: rgb(216, 0, 65);
+}
+
+.h {
+  background-color: rgb(168, 168, 160);
+}
+
+.jn {
+  background-color: rgb(242, 201, 0);
+}
+
+.line {
+  border: 1px solid #525252a6;
+  margin: 10px 0;
 }

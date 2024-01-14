@@ -1,65 +1,24 @@
 ---
 // @ts-nocheck
-
-const data = [
-  {
-    days: "Sunday, 24 Mar. 2024",
-    detail: [
-      {
-        name: "สถานี Akabane",
-        imagepath:
-          "https://www.jreast.co.jp/e/stations/img/floormap/0034_1f-2f_en.png",
-      },
-      {
-        name: "สถานี Akabane",
-        imagepath:
-          "https://www.jreast.co.jp/e/stations/img/floormap/0034_1f-2f_en.png",
-      },
-    ],
-  },
-  {
-    days: "Monday, 25 Mar. 2024",
-    detail: [
-      {
-        name: "สถานี ",
-        imagepath: "",
-      },
-    ],
-  },
-];
+const { days, station, imagepath, imagename } = Astro.props;
 ---
 
 <div>
-  {
-    data.map((items) => (
-      <>
-        <p class="accordion-p">{items.days}</p>
-        {items.detail.map((item) => (
-          <details name="my-accordion">
-            <summary>{item.name}</summary>
-            <p>
-              {item.imagepath !== "" ? (
-                <div class="zoomist-container">
-                  <div class="zoomist-wrapper">
-                    <div class="zoomist-image">
-                      <img
-                        src={item.imagepath}
-                        alt={item.name}
-                        width="50"
-                        height="50"
-                      />
-                    </div>
-                  </div>
-                </div>
-              ) : (
-                <div class="emptyimage"> No image </div>
-              )}
-            </p>
-          </details>
-        ))}
-      </>
-    ))
-  }
+  <>
+    <p class="accordion-p">{days}</p>
+    <details name="my-accordion">
+      <summary>{station}</summary>
+      <p>
+        <div class="zoomist-container">
+          <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+              <img src={imagepath} alt={imagename} width="50" height="50" />
+            </div>
+          </div>
+        </div>
+      </p>
+    </details>
+  </>
 </div>
 
 <style>

@@ -1,0 +1,181 @@
+---
+// @ts-nocheck
+const { key, items, updatedSwiperData } = Astro.props;
+import { Icon } from "astro-icon";
+
+const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
+---
+
+<div>
+  <button
+    popovertargetaction="show"
+    popovertarget={key}
+    aria-haspopup="true"
+    aria-controls="popoverID"
+  >
+    ดูแผนการเดินทางเพิ่มเติม
+  </button>
+</div>
+
+<div popover id={key} class="popoverID" role="dialog" aria-modal="true">
+  <div class="popover-content">
+    <div class="section-header">
+      <span><h3>แผนการเดินทาง {items.day}</h3></span>
+      <button popovertarget={key} popovertargetaction="hide">
+        <Icon name="jam:close" width="30" height="30" />
+      </button>
+    </div>
+
+    <div class="content-popover" set:html={items.detailmore} />
+  </div>
+</div>
+
+{
+  key === updatedSwiperData.length - 6 && (
+    <>
+      <button
+        popovertargetaction="show"
+        popovertarget={lastObject}
+        aria-haspopup="true"
+        aria-controls="popoverID"
+      >
+        ดูแผนการเดินทางสำรอง
+      </button>
+      <div
+        popover
+        id={lastObject}
+        class="popoverID"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div class="popover-content">
+          <div class="section-header">
+            <span>
+              <h3>แผนการเดินทางสำรอง {lastObject.day}</h3>
+            </span>
+            <button popovertarget={lastObject} popovertargetaction="hide">
+              <Icon name="jam:close" width="30" height="30" />
+            </button>
+          </div>
+
+          <div class="content-popover" set:html={lastObject.detailmore} />
+        </div>
+      </div>
+    </>
+  )
+}
+
+<style>
+  /** disabled scroll when open dialogs**/
+  body:has(:popover-open) {
+    overflow: hidden;
+  }
+
+  /** button Popover **/
+  button[popovertarget="popoverID"] {
+    padding: 0;
+    background: 0;
+    border: 0;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+    pointer-events: auto;
+  }
+
+  button[popovertargetaction="show"] {
+    background-color: transparent;
+    color: #fff;
+    padding: 2px 12px;
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    margin: 0px 20px 15px 0px;
+    font-size: unset;
+    /* float: right; */
+  }
+
+  /** dialogs **/
+  .popoverID {
+    background: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: auto;
+  }
+
+  /** dialogs content **/
+  .popover-content {
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    overflow: scroll;
+    border: 1px solid #ccc;
+    /* border-left: transparent;
+    border-right: transparent; */
+    border-radius: 15px 15px 0 0;
+    background-color: #2f2f2f;
+    box-shadow: -1px -1px 20px 0px rgb(0 0 0 / 54%);
+    color: #f0f5f9;
+  }
+
+  /** dialogs close button **/
+  button[popovertargetaction="hide"] {
+    display: flex;
+    border-radius: 5px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .popoverID::backdrop {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background: #000000b2;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #fff;
+    border-top: unset;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: #2f2f2f;
+    border-radius: 15px 15px 0 0;
+  }
+
+  /*  */
+  h3 {
+    margin: 20px;
+    text-overflow: ellipsis;
+    width: 280px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .content-popover {
+    margin-top: 86px;
+    margin-bottom: 20px;
+
+    div {
+      margin: 0 20px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    span {
+      text-wrap: nowrap;
+    }
+  }
+</style>
+
+<script></script>
