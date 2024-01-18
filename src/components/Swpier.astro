@@ -3,17 +3,6 @@ import { Image } from "astro:assets";
 import Modal from "./Modal.astro";
 
 const { swiperData } = Astro.props;
-
-const updatedSwiperData = swiperData.map((item: any, index: number) => item);
-
-updatedSwiperData.push({
-  day: "Thursday, 24 Mar. 2024",
-  detailmore: `
-    <div>
-    test
-    </div>
-  `,
-});
 ---
 
 <div>
@@ -22,17 +11,9 @@ updatedSwiperData.push({
       <div>
         <h4>{items.day}</h4>
         <p>
-          <span class="tag-time">เวลา {items.fromtime}</span>
-          <span>{items.planfrom}</span>
-          <span class="tag-duration">{items.duration}</span>
-          <span>{items.planto}</span>
-          <span class="tag-time">เวลา {items.totime}</span>
+          <div class="box" set:html={items.detail} />
           <div class="button">
-            <Modal
-              items={items}
-              key={index}
-              updatedSwiperData={updatedSwiperData}
-            />
+            <Modal items={items} i={index} />
           </div>
         </p>
 
@@ -82,12 +63,13 @@ updatedSwiperData.push({
     margin: 20px 0;
     border: 1px solid #525252a6;
   }
-  p {
-    margin: 10px 20px;
-  }
 
   button {
     font-size: 1rem;
+  }
+
+  .box {
+    margin: 15px 20px;
   }
 
   :root {

@@ -1,15 +1,13 @@
 ---
 // @ts-nocheck
-const { key, items, updatedSwiperData } = Astro.props;
-import { Icon } from "astro-icon";
-
-const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
+const { i, items } = Astro.props;
+import { Icon } from "astro-icon/components";
 ---
 
 <div>
   <button
     popovertargetaction="show"
-    popovertarget={key}
+    popovertarget={i}
     aria-haspopup="true"
     aria-controls="popoverID"
   >
@@ -17,53 +15,18 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
   </button>
 </div>
 
-<div popover id={key} class="popoverID" role="dialog" aria-modal="true">
+<div popover id={i} class="popoverID" role="dialog" aria-modal="true">
   <div class="popover-content">
     <div class="section-header">
       <span><h3>แผนการเดินทาง {items.day}</h3></span>
-      <button popovertarget={key} popovertargetaction="hide">
-        <Icon name="jam:close" width="30" height="30" />
+      <button popovertarget={i} popovertargetaction="hide">
+        <Icon name="mdi:close-thick" width="30" height="30" />
       </button>
     </div>
 
     <div class="content-popover" set:html={items.detailmore} />
   </div>
 </div>
-
-{
-  key === updatedSwiperData.length - 6 && (
-    <>
-      <button
-        popovertargetaction="show"
-        popovertarget={lastObject}
-        aria-haspopup="true"
-        aria-controls="popoverID"
-      >
-        ดูแผนการเดินทางสำรอง
-      </button>
-      <div
-        popover
-        id={lastObject}
-        class="popoverID"
-        role="dialog"
-        aria-modal="true"
-      >
-        <div class="popover-content">
-          <div class="section-header">
-            <span>
-              <h3>แผนการเดินทางสำรอง {lastObject.day}</h3>
-            </span>
-            <button popovertarget={lastObject} popovertargetaction="hide">
-              <Icon name="jam:close" width="30" height="30" />
-            </button>
-          </div>
-
-          <div class="content-popover" set:html={lastObject.detailmore} />
-        </div>
-      </div>
-    </>
-  )
-}
 
 <style>
   /** disabled scroll when open dialogs**/
@@ -177,5 +140,3 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     }
   }
 </style>
-
-<script></script>
