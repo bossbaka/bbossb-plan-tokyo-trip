@@ -57,7 +57,7 @@ const swiperData = [
       {
         location_name: "Suvarnabhumi Airport",
         picture: SuvarnabhumiAirportImage,
-        path: "/locations/suvarnabhumi_airport",
+        path: "https://www.google.com/maps/search/?api=1&query=Suvarnabhumi+Airport",
       },
     ],
   },
@@ -310,7 +310,7 @@ const swiperData = [
       {
         location_name: "Kamakurakōkō-Mae Station",
         picture: KamakurakokoMaeImage,
-        path: "/locations/kamakurakoko_mae_station",
+        path: "https://www.google.com/maps/search/?api=1&query=Kamakurakōkō-Mae+Station",
       },
     ],
   },
@@ -499,17 +499,17 @@ const swiperData = [
       {
         location_name: "Kurazukuri no Machinami",
         picture: KurazukurinoMachinamiImage,
-        path: "/locations/kurazukuri_no_machinami",
+        path: "https://www.google.com/maps/search/?api=1&query=urazukuri+no+Machinami+%2F+Warehouse+District",
       },
       {
         location_name: "Kawagoe Hikawa Shrine",
         picture: KawagoeHikawaShrineImage,
-        path: "/locations/kawagoe_hikawa_shrine",
+        path: "https://www.google.com/maps/search/?api=1&query=Kawagoe+Hikawa+Shrine",
       },
       {
         location_name: "Shingashi Riverbank",
         picture: ShingashiRiverbankImage,
-        path: "/locations/shingashi_riverbank",
+        path: "https://www.google.com/maps/search/?api=1&query=Shingashi+Riverbank+Cherry+Blossoms",
       },
     ],
   },
@@ -803,12 +803,12 @@ const swiperData = [
       {
         location_name: "Oishi Park Cafe",
         picture: OishiParkCafeImage,
-        path: "/locations/oishi_park_cafe",
+        path: "https://www.google.com/maps/search/?api=1&query=Oishi+Park+Café",
       },
       {
         location_name: "Naka-meguro Sta.",
         picture: NakaMeguroStaImage,
-        path: "/locations/naka_meguro_sta",
+        path: "https://www.google.com/maps/search/?api=1&query=Naka-meguro+Sta.",
       },
     ],
   },
@@ -1015,12 +1015,12 @@ const swiperData = [
       {
         location_name: "Gala Yuzawa",
         picture: GalaYuzawaImage,
-        path: "/locations/gala_yuzawa",
+        path: "https://www.google.com/maps/search/?api=1&query=GALA+Yuzawa+Snow+Resort",
       },
       {
         location_name: "Kumagaya Sakura Tsutsumi",
         picture: "",
-        path: "/locations/kumagaya_sakura_tsutsumi",
+        path: "https://www.google.com/maps/search/?api=1&query=Kumagaya+Sakura+Tsutsumi",
       },
     ],
   },
@@ -1235,7 +1235,7 @@ const swiperData = [
       {
         location_name: "Shukugawara Nikaryō Waterway",
         picture: "",
-        path: "/locations/shukugawara_nikaryo_waterway",
+        path: "https://www.google.com/maps/search/?api=1&query=Shukugawara+Nikaryō+Waterway+Cherry+blossom",
       },
     ],
   },
