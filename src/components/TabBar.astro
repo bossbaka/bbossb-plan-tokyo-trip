@@ -1,7 +1,5 @@
 ---
-// @ts-nocheck
-const pathname = new URL(Astro.request.url).pathname;
-const currentPath = pathname;
+const currentPath = Astro.url.pathname;
 
 import { Icon } from "astro-icon/components";
 
@@ -10,16 +8,6 @@ const tab = [
     title: "สถานที่",
     icon: "mdi:map-marker",
     path: "/",
-  },
-  {
-    title: "การเดินทาง",
-    icon: "mdi:train",
-    path: "/travel/",
-  },
-  {
-    title: "ค่าใช้จ่าย",
-    icon: "mdi:currency-jpy",
-    path: "/currency/",
   },
   {
     title: "คำแนะนำ",
@@ -37,9 +25,9 @@ const tab = [
           <div class="tabbar-item">
             <a
               href={item.path}
-              class={currentPath === item.path ? "active" : null}
+              class={currentPath === item.path ? "active" : ""}
             >
-              <Icon name={item.icon} width="24" height="24" />
+              <Icon name={item.icon} />
               <div>{item.title}</div>
             </a>
           </div>
@@ -50,6 +38,10 @@ const tab = [
 </footer>
 
 <style>
+  [data-icon] {
+    width: 24px;
+    height: 24px;
+  }
   .tabbar-wrap {
     display: flex;
     flex-wrap: nowrap;

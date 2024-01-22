@@ -1,8 +1,13 @@
 ---
 import { Image } from "astro:assets";
 import Modal from "./Modal.astro";
+import { BackupPlanData } from "../data/data";
 
 const { swiperData } = Astro.props;
+
+const updatedSwiperData = swiperData.map((item: any, index: number) => item);
+
+updatedSwiperData.push(BackupPlanData);
 ---
 
 <div>
@@ -13,7 +18,11 @@ const { swiperData } = Astro.props;
         <p>
           <div class="box" set:html={items.detail} />
           <div class="button">
-            <Modal items={items} i={index} />
+            <Modal
+              items={items}
+              i={index}
+              updatedSwiperData={updatedSwiperData}
+            />
           </div>
         </p>
 

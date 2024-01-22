@@ -18,13 +18,16 @@ const swiperData = [
     <span class="tag-time">เวลา 21:00 - 22:00</span>
     `,
     detailmore: `
-    <a href="https://www.google.com/maps/search/?api=1&query=Suvarnabhumi+Airport">
-    <div><span class="tag-time">เวลา 18:30</span>
+    <div>
+    <span class="tag-time">เวลา 18:30</span>
     ออกเดินทางจากวิหารแดง &nbsp;
     <iconify-icon icon="ph:car" width="30" height="30"></iconify-icon>
     <span class="tag-duration">เดินทางประมาณ 2 - 3 ชั่วโมง</span> 
-    ถึงสนามบินสุวรรณภูมิ <span class="tag-time">เวลา 21:00 - 22:00</span></div>
+    ถึงสนามบินสุวรรณภูมิ <span class="tag-time">เวลา 21:00 - 22:00</span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Suvarnabhumi+Airport" class="open-map">
+    เปิดเส้นทาง Google Map
     </a>
+    </div>
 
     <hr class="line">
 
@@ -103,9 +106,13 @@ const swiperData = [
     
     <hr class="line">
    
-    <a href="https://www.jreast.co.jp/e/customer_support/service_center.html" target="_blank">
-    <div><i>ซื้อ IC Card Welcome Suica และเติมเงินเข้า IC Card</i></div>
+    <div>
+    ซื้อ IC Card Welcome Suica และเติมเงินเข้า IC Card &nbsp;
+    <a href="https://www.jreast.co.jp/e/customer_support/service_center.html" target="_blank" class="open-map">
+    ข้อมูลตำแหน่งที่ซื้อ IC Card
     </a>
+    </div>
+    
    
     <hr class="line">
     
@@ -133,9 +140,11 @@ const swiperData = [
     <div>เดิน 
     <span class="tag-duration"> 40 นาที 750 เมตร </span> 
     <iconify-icon icon="mdi:bag-suitcase-outline" width="30" height="30"></iconify-icon>
-    <a href="https://www.sagawa-exp.co.jp/ttk/english/servicecenter/tokyo_station.html" target="_blank">
-    <i>ฝากกระเป๋าที่ SAGAWA EXPRESS TOKYO SERVICE CENTER ร้านปิด 21:00</i> 
+    ฝากกระเป๋าที่ SAGAWA EXPRESS TOKYO SERVICE CENTER
+    <a href="https://www.sagawa-exp.co.jp/ttk/english/servicecenter/tokyo_station.html" target="_blank" class="open-map">
+    ข้อมูลตำแหน่งร้าน
     </a>
+    ร้านปิด 21:00
     <span class="tag-time">เวลา 13:09</span>
     <a href="https://www.google.com/maps/search/?api=1&query=SAGAWA+EXPRESS+TOKYO+SERVICE+CENTER" class="open-map">
     เปิดเส้นทาง GoogleMap
@@ -144,13 +153,16 @@ const swiperData = [
     
     <hr class="line">
     
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Tokyo+Station">
     <div>
-    <i>ทานอาหาร </i>
+    ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
-    <span class="tag-duration">ประมาณ 1 ชั่วโมง </span> 
-    <span class="tag-time">เวลา 14:09</span></div>
+    <a href="https://www.google.com/maps/search/?api=1&query=food+Tokyo+Station" class="open-map">
+    ค้นหาร้านอาหาร
     </a>
+    <span class="tag-duration">ประมาณ 1 ชั่วโมง </span> 
+    <span class="tag-time">เวลา 14:09</span>
+    </div>
+    
 
     <hr class="line">
     
@@ -169,10 +181,11 @@ const swiperData = [
     Tokyo Station 
     </a>
     <span class="tag-line jo">สาย Yokosuka </span>
+    ลงสถานี
     <a href="https://www.jreast.co.jp/e/stations/e476.html" target="_blank" class="detail-map">
-    แผนที่ Kamakura Station ต่อขบวน ไปขึ้นสาย
+    Kamakura Station 
     </a>
-    <iconify-icon icon="grommet-icons:next" width="18" height="18"></iconify-icon>
+    เดินไปเปลี่ยนสายขึ้น
     <span class="tag-line en">สาย Enoden</span>
     ถึงสถานี 
     <a href="https://www.enoden.co.jp/en/train/station/kamakurakokomae/" target="_blank" class="detail-map">
@@ -194,14 +207,16 @@ const swiperData = [
     
     <hr class="line">
     
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Kamakurakōkō-Mae+Station">
     <div>
-    <i>ทานอาหาร </i>
+    ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
+    <a href="https://www.google.com/maps/search/?api=1&query=food+Kamakurakōkō-Mae+Station" class="open-map">
+    ค้นหาร้านอาหาร
+    </a>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
     <span class="tag-time">เวลา 18:12</span>
     </div>
-    </a>
+    
     
     <hr class="line">
 
@@ -237,14 +252,16 @@ const swiperData = [
     
     <hr class="line">
 
-    <a href="https://www.jreast.co.jp/e/customer_support/service_center_tokyo.html" target="_blank">
     <div>
     รับตั๋ว &nbsp;
     <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon> &nbsp;
-    <i> JR Tokyo Wind Pass ที่ตู้อัตโนมัติ </i>
+    JR Tokyo Wind Pass ที่ตู้อัตโนมัติ 
+    <a href="https://www.jreast.co.jp/e/customer_support/service_center_tokyo.html" target="_blank" class="open-map">
+    ข้อมูลตำแหน่งที่ตั้งตู้อัตโนมัติ
+    </a>
     <span class="tag-duration">ประมาณ 30 นาที </span> 
     <span class="tag-time">เวลา 20:30</span> </div>
-    </a>
+    
 
     <hr class="line">
 
@@ -305,7 +322,7 @@ const swiperData = [
     detail: `
     <span class="tag-time">เวลา 06:32</span>
     <span>ยืนอยู่สถานี Akabane Station</span>
-    <span class="tag-duration">อยู่บนรถไฟ 10 นาที</span>
+    <span class="tag-duration">อยู่บนรถไฟ</span>
     <span>ถึงสถานี Ikebukuro Station</span>
     <span class="tag-time">เวลา 06:40</span>
     `,
@@ -313,7 +330,7 @@ const swiperData = [
     <div>
     <span class="tag-time">เวลา 06:32</span>
     ขึ้นรถไฟสถานี 
-    <a href="https://www.jreast.co.jp/e/stations/e108.html" target="_blank" class="detail-map">
+    <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
     </a>
     <span class="tag-line ja">สาย Saikyō</span>
@@ -331,18 +348,14 @@ const swiperData = [
 
     <div>
     ซื้อตั๋ว &nbsp;
-    <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon> &nbsp;
-    <div>
-    <a href="https://www.tobu.co.jp/th/ticket/kawagoe/premium.html" target="_blank">
-    <i>KAWAGOE DISCOUNT PASS Premium 2 ใบ</i>
+    <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon>
+    KAWAGOE DISCOUNT PASS Premium 2 ใบ
+    <a href="https://www.tobu.co.jp/th/ticket/kawagoe/premium.html" target="_blank" class="open-map">
+    เว็บไซต์ KAWAGOE
     </a>
-    </div>
-
-    <div> 
-    <a href="https://partners-pamph.jnto.go.jp/simg/pamph/1745.pdf" target="_blank">
-    เปิด pdf ดูข้อมูล Kawagoe
+    <a href="https://partners-pamph.jnto.go.jp/simg/pamph/1745.pdf" class="open-map">
+    เปิดดูข้อมูล Kawagoe แบบ PDF
     </a>
-    </div>
     </div>
 
     <hr class="line">
@@ -366,13 +379,16 @@ const swiperData = [
 
     <hr class="line">
 
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Kawagoe+Station">
     <div>
-    <i>ทานอาหาร </i>
+    ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
-    <span class="tag-duration">ประมาณ 1 ชั่วโมง </span> 
-    <span class="tag-time">เวลา 08:50</span></div>
+    <a href="https://www.google.com/maps/search/?api=1&query=food+Kawagoe+Station" class="open-map">
+    ค้นหาร้านอาหาร
     </a>
+    <span class="tag-duration">ประมาณ 1 ชั่วโมง </span> 
+    <span class="tag-time">เวลา 08:50</span>
+    </div>
+    
 
     <hr class="line">
 
@@ -400,8 +416,9 @@ const swiperData = [
 
     <div>
     เดินไปร้าน
-    <a href="https://coedovivian.com/" target="_blank">
-    <i>Vivian Kimono Rental</i>
+    Vivian Kimono Rental
+    <a href="https://coedovivian.com/" target="_blank" class="open-map">
+    เว็บไซต์ร้าน
     </a>
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="clarity:store-solid" width="30" height="30"></iconify-icon>
@@ -415,8 +432,8 @@ const swiperData = [
     <hr class="line">
 
     <div>
-    <a href="https://www.google.com/maps/d/viewer?mid=1Qov_nooz0wjW0uiYwEjaGL-bc2FLs8c&femb=1&ll=35.92402345931941%2C139.48575520000003&z=16" target="_blank">
-    <i>ดูแผนการเดินทางเมือง Kawagoe</i>
+    <a class="open-map" href="https://www.google.com/maps/d/viewer?mid=1Qov_nooz0wjW0uiYwEjaGL-bc2FLs8c&femb=1&ll=35.92402345931941%2C139.48575520000003&z=16" target="_blank">
+    ดูแผนการเดินทางเมือง Kawagoe
     </a>
     </div>
 
@@ -464,6 +481,19 @@ const swiperData = [
     </a>
     </div>
 
+    <hr class="line">
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
+    <div>เดินจากสถานีไปที่พัก 
+    <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
+    <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
+    </div>
+    </a>
+
+    <hr class="line">
+
+    <div> พรุ่งนี้ตื่นตี 5 </div>
+
     `,
     locations: [
       {
@@ -492,7 +522,7 @@ const swiperData = [
     detail: `
     <span class="tag-time">เวลา 06:03</span>
     <span>ยืนอยู่สถานี Akabane Station</span>
-    <span class="tag-duration">อยู่บนรถไฟ 15 นาที</span>
+    <span class="tag-duration">อยู่บนรถไฟ</span>
     <span>ถึงสถานี Shinjuku Station</span>
     <span class="tag-time">เวลา 06:18</span>
     `,
@@ -500,29 +530,34 @@ const swiperData = [
     <div>
     <span class="tag-time">เวลา 06:03</span>
     ขึ้นรถไฟสถานี 
-    <a href="https://www.jreast.co.jp/e/stations/e108.html" target="_blank" class="detail-map">
+    <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
     </a>
     <span class="tag-line ja">สาย Saikyō</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e866.html" target="_blank" class="detail-map">
     Shinjuku Station
     </a>
     <span class="tag-time">เวลา 06:18</span>
     <a href="https://www.google.com/maps/dir/?api=1&origin=Akabane+Station&destination=Shinjuku+Station&travelmode=transit" class="open-map">
-    เปิดเส้นทาง GoogleMap
+    เปิดเส้นทาง GoogleMap 
     </a>
     </div>
 
     <hr class="line">
 
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Shinjuku+Station">
     <div>
-    <i>ซื้อข้าวกล่องไปกินบนรถไฟ</i> &nbsp;
+    ซื้อข้าวกล่องไปกินบนรถไฟ
     <iconify-icon icon="mdi:cash" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
-    </div>
+    <a href="https://www.google.com/maps/search/?api=1&query=food+Shinjuku+Station" class="open-map">
+    ค้นหาร้านอาหาร
     </a>
+    </div>
+    
 
     <hr class="line">
 
@@ -537,6 +572,9 @@ const swiperData = [
     <span class="tag-line jc">สาย Chūō</span>
     ต่อบนพาหนะเดิม
     <span class="tag-line fuji">สาย Fujikyuko No.3</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     <a href="https://www.jreast.co.jp/hachioji/fuji_excursion/en/#fuji_station" target="_blank" class="detail-map">
     ข้อมูลสาย FUJI EXCURSION
     </a>
@@ -556,21 +594,23 @@ const swiperData = [
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="tabler:bus" width="30" height="30"></iconify-icon>
 
-    <a href="https://en.kawaguchiko.net/img/pdf/bus_timetable_en.pdf" target="_blank" class="detail-map">
-    เวลารถบัส ออกทุก 15 นาที
+    <a href="https://en.kawaguchiko.net/img/pdf/bus_timetable_en.pdf" class="open-map">
+    ข้อมูลตารางเวลารถบัส PDF - รถออกทุก 15 นาที 
     </a>
 
     </div>
 
     <hr class="line">
 
-    <a href="#" target="_blank">
     <div>
     <i>ลงป้าย</i> &nbsp;
     <iconify-icon icon="ant-design:stop-twotone" width="30" height="30"></iconify-icon>
-    <i>Shimazuyashiki-mae No.18 </i>
-    </div>
+    Shimazuyashiki-mae No.18
+    <a href="https://www.google.com/maps/search/?api=1&query=Shimazuyashiki-mae" class="open-map">
+    เปิดเส้นทาง GoogleMap
     </a>
+    </div>
+    
 
     <hr class="line">
 
@@ -587,9 +627,10 @@ const swiperData = [
 
     <div>เดินไป 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
-    Oishi Park Café ผ่าน&nbsp;
-    <a href="https://www.google.com/maps/search/?api=1&query=Lake+Bake+Cafe">
-    <i>ร้านขนมปัง Lake Bake Cafe</i>
+    Oishi Park Café 
+    ผ่านร้านขนมปัง Lake Bake Cafe
+    <a href="https://www.google.com/maps/search/?api=1&query=Lake+Bake+Cafe" class="open-map">
+    ข้อมูลร้าน
     </a>
     <iconify-icon icon="mdi:bread" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ph:coffee" width="30" height="30"></iconify-icon>
@@ -616,6 +657,9 @@ const swiperData = [
     Kawaguchiko Station
     </span>
     <span class="tag-line fuji">สาย Fujikyuko No.36</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     <a href="https://www.jreast.co.jp/hachioji/fuji_excursion/en/#fuji_station" target="_blank" class="detail-map">
     ข้อมูลสาย FUJI EXCURSION
     </a>
@@ -653,6 +697,9 @@ const swiperData = [
     Shinjuku-sanchome Station
     </a>
     <span class="tag-line f">สาย Fukutoshin</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:tokyometro" style="color: #00a3d9;" width="26" height="26"></iconify-icon>
+    </span>
     ต่อบนพาหนะเดิม
     <span class="tag-line ty">สาย Tōyoko</span>
     ถึงสถานี 
@@ -679,15 +726,15 @@ const swiperData = [
     </div>   
 
     <div>
-    1) เดิน 
-    <span class="tag-duration">ระยะทาง 1.3 กิโลเมตร ประมาณ 20 นาที </span> 
-    ไปสถานี 
+    1) เดินไปสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e290.html" target="_blank" class="detail-map">
     Ebisu Station
     </a>
     เพื่อขึ้น
     <span class="tag-line ja">สาย Saikyō</span>
-    <span class="tag-time">เวลา </span> 
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     <a href="https://www.google.com/maps/search/?api=1&query=Ebisu+Station" class="open-map">
     เปิดเส้นทางที่ 1 บน GoogleMap 
     </a>
@@ -695,14 +742,15 @@ const swiperData = [
 
    
     <div>
-    2) เดิน
-    <span class="tag-duration">ระยะทาง  กิโลเมตร ประมาณ  นาที </span> 
-    ไปสถานี
+    2) เดินไปสถานี
     <a href="https://www.tokyometro.jp/lang_th/station/naka-meguro/index.html" target="_blank" class="detail-map">
     Naka-meguro Sta. 
     </a>
     ขึ้นรถไฟ
     <span class="tag-line h">สาย Hibiya</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:tokyometro" style="color: #00a3d9;" width="26" height="26"></iconify-icon>
+    </span>
     ลงสถานี
     <a href="https://www.tokyometro.jp/lang_th/station/ebisu/index.html" target="_blank" class="detail-map">
     Ebisu Station
@@ -714,6 +762,9 @@ const swiperData = [
     Ebisu 
     </a>
     <span class="tag-line ja">สาย Saikyō</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     <a href="https://www.google.com/maps/dir/?api=1&origin=+Naka-meguro+Sta.&destination=Ebisu+Station&travelmode=transit" class="open-map">
     เปิดเส้นทางที่ 2 บน GoogleMap
     </a>
@@ -723,12 +774,13 @@ const swiperData = [
 
 
     <div>
-    <span class="tag-time">เวลา </span>
     ไปสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
     </a>
-    <span class="tag-time">เวลา </span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     <a href="https://www.google.com/maps/search/?api=1&query=Akabane+Station" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
@@ -740,18 +792,12 @@ const swiperData = [
     <div>เดินจากสถานีไปที่พัก 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
-    <span class="tag-duration">ประมาณ 40 นาที </span> 
-    ถึงที่พักประมาณ
-    <span class="tag-time">เวลา </span> 
-    <i>Check in ที่พัก Toyoko Inn Tokyo Akabane-eki Higashi-guchi</i>
     </div>
     </a>
 
     <hr class="line">
 
     <div> พรุ่งนี้ตื่นตี 5 </div>
-
-
     `,
     locations: [
       {
@@ -775,9 +821,9 @@ const swiperData = [
     detail: `
     <span class="tag-time">เวลา 06:03</span>
     <span>ยืนอยู่สถานี Akabane Station</span>
-    <span class="tag-duration">อยู่บนรถไฟ  นาที</span>
+    <span class="tag-duration">อยู่บนรถไฟ</span>
     <span>ถึงสถานี Tokyo Station</span>
-    <span class="tag-time">เวลา</span>
+    <span class="tag-time">เวลา 06:18</span>
     `,
     detailmore: `
     <div>
@@ -786,7 +832,10 @@ const swiperData = [
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
     </a>
-    <span class="tag-line ja">สาย </span>
+    <span class="tag-line ueno">สาย Ueno-Tokyo</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
     Tokyo Station
@@ -800,18 +849,21 @@ const swiperData = [
     <hr class="line">
 
     <div>
-    <span class="tag-time">เวลา </span>
+    <span class="tag-time">เวลา 06:44</span>
     ขึ้นรถไฟสถานี 
-    <a href="" target="_blank" class="detail-map">
+    <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
     Tokyo Station
     </a>
-    <span class="tag-line ja">สาย </span>
+    <span class="tag-line joetsu">สาย Joetsu Shinkansen</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ถึงสถานี 
-    <a href="" target="_blank" class="detail-map">
+    <a href="https://gala.co.jp/winter/thai/access-thai/" target="_blank" class="detail-map">
     Gala Yuzawa
     </a>
-    <span class="tag-time">เวลา </span>
-    <a href="https://www.google.com/maps/dir/?api=1&origin=Tokyo+Station&destination=     &travelmode=transit" class="open-map">
+    <span class="tag-time">เวลา 07:55</span>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=Tokyo+Station&destination=GALA+Yuzawa+Snow+Resort&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
     </div>
@@ -819,24 +871,19 @@ const swiperData = [
     <hr class="line">
 
     <div>
-    <a href="https://scontent.fbkk26-1.fna.fbcdn.net/v/t39.30808-6/412847057_356377887088495_732512912705972435_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=dd5e9f&_nc_eui2=AeF8WlvsqHIkTIoLAeZjmvKWO65VAi38dtg7rlUCLfx22E1d7nNXkaoPB-2tRKCTCWb94T7_QUgLlKtONuL6xPtB&_nc_ohc=uw_n-IYZ5-cAX84xNau&_nc_ht=scontent.fbkk26-1.fna&oh=00_AfArPewIcMgYGkVd5c99WGlm6iUcdiHjhtnp7TXxQ1Tr4g&oe=65A59375" target="_blank">
-    <i>ซื้อตั๋วกอนโดล่า &nbsp;</i>
-    </a>
+    ซื้อตั๋วกอนโดล่า 2 ใบ &nbsp;
     <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon> &nbsp;
-    <i>2 ใบ</i>
-    </div>
-    <div>กับ</div>
-    <div>
-    <a href="https://gala.co.jp/winter/thai/rental-thai/" target="_blank">
-    <i>เช่าชุด</i>
+    <a href="https://gala.co.jp/winter/thai/charges-thai/" target="_blank" class="open-map">
+    ข้อมูลตั๋ว
     </a>
-    </div>
-    <div>
-    เก็บของที่ตู้ล็อคเกอร์
-    </div>
-    <div>
-    <a href="https://gala.co.jp/winter/thai/" target="_blank">
-    <i>ดูข้อมูลเว็บของ Gala</i>
+    กับ
+    เช่าชุด
+    <a href="https://gala.co.jp/winter/thai/rental-thai/" target="_blank" class="open-map">
+    เว็บเช่าชุด
+    </a>
+    ไปเก็บของที่ตู้ล็อคเกอร์, เปลี่ยนชุด
+    <a href="https://gala.co.jp/winter/thai/" target="_blank" class="open-map">
+    เว็บไซต์ Gala
     </a>
     </div>
     
@@ -846,7 +893,6 @@ const swiperData = [
     <div>ขึ้นกอดโดล่าเพื่อไปถ่ายรูปกับหิมะ &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
-    <span class="tag-time">เวลา</span>
     </div>
 
     <hr class="line">
@@ -859,28 +905,41 @@ const swiperData = [
     <div>
     <span class="tag-time">เวลา </span>
     ขึ้นรถไฟสถานี 
-    <a href="" target="_blank" class="detail-map">
+    <a href="https://gala.co.jp/winter/thai/access-thai/" target="_blank" class="detail-map">
     Gala Yuzawa
     </a>
-    <span class="tag-line ja">สาย </span>
+    <span class="tag-line joetsu">สาย Joetsu Shinkansen</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
+    ลงสถานี
+    <a href="https://www.jreast.co.jp/e/stations/e934.html" target="_blank" class="detail-map">
+    Takasaki Station
+    </a>
+    เดินไปเปลี่ยนสายขึ้น
+    <span class="tag-line js">สาย Shonan-Shinjuku</span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e625.html" target="_blank" class="detail-map">
     Kumagaya Station
     </a>
     <span class="tag-time">เวลา </span>
-    <a href="https://www.google.com/maps/dir/?api=1&origin=    &destination=Kumagaya+Station&travelmode=transit" class="open-map">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=GALA+Yuzawa+Snow+Resort&destination=Kumagaya+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
     </div>
 
-    <div>เดินถ่ายรูปที่ 
-    <a href="https://www.google.com/maps/search/?api=1&query=Kumagaya+Sakura+Tsutsumi">
-    <i>Kumagaya Sakura Tsutsumi</i> 
-    </a> &nbsp;
+    <div>เดินถ่ายรูป &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
+    &nbsp;
+    ที่ Kumagaya Sakura Tsutsumi
+    <a href="https://www.google.com/maps/search/?api=1&query=Kumagaya+Sakura+Tsutsumi" class="open-map">
+    เปิดเส้นทาง GoogleMap
+    </a>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
     <span class="tag-time">เวลา </span>
     </div>
+
+    <hr class="line">
 
     <div>
     <u>2) แผนสำรอง</u>
@@ -889,32 +948,37 @@ const swiperData = [
     <div>
     <span class="tag-time">เวลา </span>
     ขึ้นรถไฟสถานี 
-    <a href="" target="_blank" class="detail-map">
+    <a href="https://gala.co.jp/winter/thai/access-thai/" target="_blank" class="detail-map">
     Gala Yuzawa
     </a>
-    <span class="tag-line ja">สาย </span>
+    <span class="tag-line joetsu">สาย Joetsu Shinkansen</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e350.html" target="_blank" class="detail-map">
     Ōmiya Station
     </a>
     <span class="tag-time">เวลา </span>
-    <a href="https://www.google.com/maps/dir/?api=1&origin=    &destination=Ōmiya+Station&travelmode=transit" class="open-map">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=GALA+Yuzawa+Snow+Resort&destination=Ōmiya+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
     </div>
 
-    <div>เดินถ่ายรูปที่ 
-    <a href="https://www.google.com/maps/search/?api=1&query=Omiya+Parki">
-    <i>Omiya Park</i> 
-    </a> &nbsp;
+    <div>เดินถ่ายรูป &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
+    &nbsp;
+    ที่ Omiya Park
+    <a href="https://www.google.com/maps/search/?api=1&query=Omiya+Parki" class="open-map">
+    เปิดเส้นทาง GoogleMap
+    </a> 
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
     <span class="tag-time">เวลา </span>
     </div>
 
     <div>
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Omiya+Station">
-    <i>ดูข้อมูลร้านอาหารแถว Omiya</i>
+    <a href="https://www.google.com/maps/search/?api=1&query=food+Omiya+Station" class="open-map">
+    ค้นหาร้านอาหารแถว Omiya
     </a>
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
     </div>
@@ -922,10 +986,30 @@ const swiperData = [
     <hr class="line">
 
     <div>
-    <a href="https://www.google.com/maps/search/?api=1&query=Akabane+Station">
-    <i>ไปสถานี Akabane Station กลับที่พัก</i>
+    ไปสถานี 
+    <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
+    Akabane Station 
+    </a>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
+    <a href="https://www.google.com/maps/search/?api=1&query=Akabane+Station" class="open-map">
+    เปิดเส้นทาง GoogleMap
     </a>
     </div>
+
+    <hr class="line">
+
+    <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
+    <div>เดินจากสถานีไปที่พัก 
+    <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
+    <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
+    </div>
+    </a>
+
+    <hr class="line">
+
+    <div> พรุ่งนี้ตื่นตี 5 </div>
     `,
     locations: [
       {
@@ -948,12 +1032,13 @@ const swiperData = [
     name: "Kanagawa",
 
     detail: `
-    <span class="tag-time">เวลา</span>
+    <span class="tag-time">เวลา 06:00</span>
     <span>Check Out ออกจากที่พัก</span>
     `,
 
     detailmore: `
     <div>
+    <span class="tag-time">เวลา 06:00</span>
     Check Out ออกจากที่พัก 
     </div>
 
@@ -966,6 +1051,9 @@ const swiperData = [
     Akabane Station 
     </a>
     <span class="tag-line ueno">สาย Ueno-Tokyo</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
     Tokyo Station
@@ -991,38 +1079,155 @@ const swiperData = [
     Tokyo Station
     </a>
     <span class="tag-line ueno">สาย Ueno-Tokyo</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
     ลงสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e526.html" target="_blank" class="detail-map">
     Kawasaki Station
     </a>
     เดินไปเปลี่ยนสายขึ้น
-    <span class="tag-line jn">
-    สาย Nambu
+    <span class="tag-line jn">สาย Nambu</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
     </span>
     ถึงสถานี 
     <a href="https://www.jreast.co.jp/estation/stations/839.html" target="_blank" class="detail-map">
     Shukugawara Station
     </a>
     <span class="tag-time">เวลา 07:59</span>
-    <a href="https://www.google.com/maps/dir/?api=1&origin=Akabane+Station&destination=Tokyo+Station&travelmode=transit" class="open-map">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=Tokyo+Station&destination=Shukugawara+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
     </div>
 
     <hr class="line">
 
-    <div>เดินถ่ายรูป
-    <a href="https://www.google.com/maps/search/?api=1&query=Shukugawara+Nikaryō+Waterway">
-    <i>Shukugawara Nikaryō Waterway &nbsp;</i>
-    </a>
+    <div>เดินถ่ายรูป &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
+    &nbsp;
+    ที่ Shukugawara Nikaryō Waterway
+    <a href="https://www.google.com/maps/search/?api=1&query=Shukugawara+Nikaryō+Waterway" class="open-map">
+    เปิดเส้นทาง GoogleMap
+    </a>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
-    <span class="tag-time">เวลา </span>
     </div>
 
     <hr class="line">
 
+    <div>
+    <span class="tag-time">เวลา 09:00</span>
+    ขึ้นรถไฟสถานี 
+    <a href="https://www.jreast.co.jp/estation/stations/839.html" target="_blank" class="detail-map">
+    Shukugawara Station
+    </a>
+    <span class="tag-line jn">สาย Nambu</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
+    ลงสถานี 
+    <a href="https://www.jreast.co.jp/e/stations/e526.html" target="_blank" class="detail-map">
+    Kawasaki Station
+    </a>
+    เดินไปเปลี่ยนสายขึ้น
+    <span class="tag-line ueno">สาย Ueno-Tokyo</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
+    ถึงสถานี 
+    <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
+    Tokyo Station
+    </a>
+    <span class="tag-time">เวลา 09:50</span>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=Shukugawara+Station&destination=Tokyo+Station&travelmode=transit" class="open-map">
+    เปิดเส้นทาง GoogleMap
+    </a>
+    </div>
+
+    <hr class="line">
+
+    <div>
+    เดิน
+    <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
+    ไปเอากระเป๋าที่ฝากไว้ตู้ล็อกเกอร์
+    </div>
+
+    <hr class="line">
+
+    <div>
+    <span class="tag-time">เวลา 11:03</span>
+    ขึ้นรถไฟสถานี 
+    <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
+    Tokyo Station
+    </a>
+    <span class="tag-line nrt">สาย Narita Express No.19</span>
+    <span class="open-map">
+    <iconify-icon icon="simple-icons:jrgroup" style="color: #009100;" width="26" height="26"></iconify-icon>
+    </span>
+    ถึงสถานี 
+    <a href="https://www.narita-airport.jp/en/access/train" target="_blank" class="detail-map">
+    Narita Airport Terminal 1
+    </a>
+    <span class="tag-time">เวลา 11:57</span>
+    <a href="https://www.google.com/maps/dir/?api=1&origin=Tokyo+Station&destination=Narita+Airport+Terminal+1&travelmode=transit" class="open-map">
+    เปิดเส้นทาง GoogleMap
+    </a>
+    </div>
+
+    <hr class="line">
+
+    <div>Check in Counter AirJapn 
+    สามารถ Check In ได้ก่อนล่วงหน้า 3 ชั่วโมง ควร 
+    <span class="tag-duration">Check In ตอน 14:30</span></div> 
     
+    <hr class="line">
+    
+    <div>เข้าด่านตรวจ 
+    <iconify-icon icon="mdi:account-tie-hat-outline" width="30" height="30"></iconify-icon>
+    </div>
+    
+    <hr class="line">
+    
+    <div>ไป Gate รอเตรียมขึ้นเครื่องบิน </div>
+   
+    <hr class="line">
+   
+    <div>
+    เครื่องบินออก 
+    <iconify-icon icon="mdi:airplane-takeoff" width="30" height="30"></iconify-icon>
+    <span class="tag-time">17:55 น.</span>
+    </div>
+
+    <hr class="line">
+
+    <div>
+    <span class="tag-time">เวลา 17:55</span>
+    อยู่บนเครื่องบิน AirJapan NQ001
+    <iconify-icon icon="mdi:seat-passenger" width="30" height="30"></iconify-icon>
+    <span class="tag-duration">เดินทางประมาณ 7 ชั่วโมง 20 นาที</span> 
+    ถึงสนามบินสุวรรณภูมิ
+    <span class="tag-time">เวลา 23:15</span>
+    </div>
+
+    <hr class="line">
+
+    <div>
+    เข้าด่านตรวจคนเข้าเมือง Immigration แสดง Passport
+    </div>
+
+    <hr class="line">
+
+    <div>
+    ไปหยิบกระเป๋าที่รางสายพาน  
+    <iconify-icon icon="mdi:bag-checked" width="30" height="30"></iconify-icon>
+    </div>
+
+    <hr class="line">
+
+    <div>
+    เดินทางกลับบ้านวิหารแดง
+    </div>
+
 
 
     `,
@@ -1059,4 +1264,13 @@ const travelData = [
   },
 ];
 
-export { swiperData, travelData };
+const BackupPlanData = {
+  day: "Thursday, 24 Mar. 2024",
+  detailmore: `
+    <div>
+      
+    </div>
+  `,
+};
+
+export { swiperData, travelData, BackupPlanData };

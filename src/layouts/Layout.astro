@@ -1,6 +1,5 @@
 ---
-import { pwaInfo } from "virtual:pwa-info";
-import ReloadPrompt from "../components/ReloadPrompt.astro";
+// @ts-nocheck
 
 import TabBar from "../components/TabBar.astro";
 import TopBar from "../components/TopBar.astro";
@@ -44,7 +43,10 @@ const { title } = Astro.props;
       src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
     ></script>
 
-    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+    <script
+      is:inline
+      src="https://static.line-scdn.net/liff/edge/versions/2.23.1/sdk.js"
+    ></script>
 
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
@@ -55,7 +57,6 @@ const { title } = Astro.props;
       <slot />
     </div>
     <TabBar />
-    <ReloadPrompt />
   </body>
 </html>
 
@@ -72,3 +73,5 @@ const { title } = Astro.props;
     justify-content: flex-start;
   }
 </style>
+
+<script></script>

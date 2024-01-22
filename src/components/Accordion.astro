@@ -1,24 +1,36 @@
 ---
 // @ts-nocheck
-const { days, station, imagepath, imagename } = Astro.props;
+const {
+  days,
+  station,
+  imagepath,
+  imagename,
+  infoname,
+  pathname,
+  pathlink,
+  item,
+} = Astro.props;
+
+console.log(item);
 ---
 
 <div>
-  <>
-    <p class="accordion-p">{days}</p>
-    <details name="my-accordion">
-      <summary>{station}</summary>
-      <p>
-        <div class="zoomist-container">
-          <div class="zoomist-wrapper">
-            <div class="zoomist-image">
-              <img src={imagepath} alt={imagename} width="50" height="50" />
-            </div>
-          </div>
-        </div>
-      </p>
-    </details>
-  </>
+  <details name="my-accordion">
+    <summary>{item.infoname}</summary>
+    <div>
+      <ul>
+        {
+          item.path.map((sub) => (
+            <li>
+              <a href={sub.link} target="_blank">
+                {sub.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </details>
 </div>
 
 <style>
@@ -26,11 +38,12 @@ const { days, station, imagepath, imagename } = Astro.props;
     background-color: rgb(132 132 132 / 27%);
     color: white;
     cursor: pointer;
-    padding: 13px;
+    padding: 7px;
+    border-radius: 7px;
   }
 
   details {
-    margin: 3px 0px;
+    margin: 3px 20px;
     border-radius: 10px;
     border: 1px solid #f0f5f9;
     padding: 3px;
@@ -41,9 +54,6 @@ const { days, station, imagepath, imagename } = Astro.props;
     color: black;
     border-radius: 5px;
   }
-  .accordion-p {
-    margin: 10px 0;
-  }
 
   img {
     display: block;
@@ -52,8 +62,13 @@ const { days, station, imagepath, imagename } = Astro.props;
   }
 
   details div {
-    text-align: center;
+    margin: 10px 0px;
   }
+
+  li {
+    margin: 10px 0px;
+  }
+
   .zoomist-container {
     margin: 10px;
   }

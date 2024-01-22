@@ -1,7 +1,9 @@
 ---
 // @ts-nocheck
-const { i, items } = Astro.props;
+const { i, items, updatedSwiperData } = Astro.props;
 import { Icon } from "astro-icon/components";
+
+const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
 ---
 
 <div>
@@ -20,7 +22,7 @@ import { Icon } from "astro-icon/components";
     <div class="section-header">
       <span><h3>แผนการเดินทาง {items.day}</h3></span>
       <button popovertarget={i} popovertargetaction="hide">
-        <Icon name="mdi:close-thick" width="30" height="30" />
+        <Icon name="mdi:close-thick" />
       </button>
     </div>
 
@@ -28,7 +30,46 @@ import { Icon } from "astro-icon/components";
   </div>
 </div>
 
+{
+  i === updatedSwiperData.length - 6 && (
+    <>
+      <button
+        popovertargetaction="show"
+        popovertarget={lastObject}
+        aria-haspopup="true"
+        aria-controls="popoverID"
+      >
+        ดูแผนการเดินทางสำรอง
+      </button>
+      <div
+        popover
+        id={lastObject}
+        class="popoverID"
+        role="dialog"
+        aria-modal="true"
+      >
+        <div class="popover-content">
+          <div class="section-header">
+            <span>
+              <h3>แผนการเดินทางสำรอง {lastObject.day}</h3>
+            </span>
+            <button popovertarget={lastObject} popovertargetaction="hide">
+              <Icon name="mdi:close-thick" />
+            </button>
+          </div>
+
+          <div class="content-popover" set:html={lastObject.detailmore} />
+        </div>
+      </div>
+    </>
+  )
+}
+
 <style>
+  [data-icon] {
+    width: 30px;
+    height: 30px;
+  }
   /** disabled scroll when open dialogs**/
   body:has(:popover-open) {
     overflow: hidden;
