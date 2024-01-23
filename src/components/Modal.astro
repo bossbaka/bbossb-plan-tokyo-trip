@@ -67,8 +67,9 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
 
 <style>
   [data-icon] {
-    width: 30px;
-    height: 30px;
+    width: 18px;
+    height: 18px;
+    color: rgb(255 255 255 / 40%);
   }
   /** disabled scroll when open dialogs**/
   body:has(:popover-open) {
@@ -117,9 +118,6 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     width: 100%;
     height: 65%;
     overflow: scroll;
-    border: 1px solid #ccc;
-    /* border-left: transparent;
-    border-right: transparent; */
     border-radius: 15px 15px 0 0;
     background-color: #2f2f2f;
     box-shadow: -1px -1px 20px 0px rgb(0 0 0 / 54%);
@@ -132,9 +130,9 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     border-radius: 5px;
     color: #fff;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid rgb(255 255 255 / 40%);
     padding: 0;
-    margin-right: 20px;
+    margin-right: 25px;
   }
 
   .popoverID::backdrop {
@@ -147,8 +145,7 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #fff;
-    border-top: unset;
+    border-bottom: 1px solid rgb(255 255 255 / 20%);
     position: fixed;
     left: 0;
     right: 0;
@@ -158,15 +155,47 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
 
   /*  */
   h3 {
-    margin: 20px;
+    margin: 17px 20px;
     text-overflow: ellipsis;
     width: 280px;
     white-space: nowrap;
     overflow: hidden;
+    color: rgb(255 255 255 / 40%);
   }
 
+  .popoverID {
+    &:popover-open {
+      /*   0. BEFORE-OPEN STATE   */
+      /*  initial state for what we're animating *in* from, 
+        in this case: goes from lower (y + 20px) to center  */
+      @starting-style {
+        transform: translateY(300px);
+        opacity: 0;
+      }
+
+      /*   1. OPEN STATE   */
+      /*  state when popover is open, BOTH:
+        what we're transitioning *in* to 
+        and transitioning *out* from */
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /*   2. AFTER-OPEN-IS-CLOSED STATE   */
+    /*  initial state for what we're animating *out* to , 
+      in this case: goes from center to (y - 50px) higher */
+    transform: translateY(100px);
+    opacity: 0;
+
+    /*  enumarate transitioning properties, including display */
+    transition:
+      transform 0.5s,
+      opacity 0.5s,
+      display 0.5s;
+    transition-behavior: allow-discrete;
+  }
   .content-popover {
-    margin-top: 86px;
+    margin-top: 65px;
     margin-bottom: 20px;
 
     div {

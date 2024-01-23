@@ -57,31 +57,7 @@ const { item } = Astro.props;
   li {
     margin: 10px 0px;
   }
-
-  .zoomist-container {
-    margin: 10px;
-  }
-  .zoomist-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-
   .emptyimage {
     margin: 10px;
   }
 </style>
-
-<script>
-  // @ts-nocheck
-  new Zoomist(".zoomist-container", {
-    // Optional parameters
-    maxScale: 4,
-    bounds: true,
-    // if you need slider
-    slider: true,
-    // if you need zoomer
-    zoomer: true,
-  });
-</script>

@@ -88,7 +88,7 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เข้าด่านตรวจคนเข้าเมือง Immigration</div> 
+    <div>เข้าด่านตรวจคนเข้าเมือง Immigration แสดง Passport กับสแกน QR Code</div> 
     
     <hr class="line">
    
@@ -100,7 +100,7 @@ const swiperData = [
     <hr class="line">
    
     <div>
-    เข้าด่านกรมศุลกากร Customs &nbsp;
+    เข้าด่านกรมศุลกากร Customs สแกน QR Code &nbsp;
     <iconify-icon icon="fluent-emoji-high-contrast:customs" width="30" height="30"></iconify-icon>
     </div>
     
@@ -493,7 +493,6 @@ const swiperData = [
     <hr class="line">
 
     <div> พรุ่งนี้ตื่นตี 5 </div>
-
     `,
     locations: [
       {

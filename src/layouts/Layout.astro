@@ -1,5 +1,6 @@
 ---
 // @ts-nocheck
+import { ViewTransitions } from "astro:transitions";
 
 import TabBar from "../components/TabBar.astro";
 import TopBar from "../components/TopBar.astro";
@@ -30,26 +31,15 @@ const { title } = Astro.props;
       src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
     ></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.css"
-    />
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/zoomist@2/zoomist.umd.js"></script>
-
     <script
       is:inline
       src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
     ></script>
 
-    <script
-      is:inline
-      src="https://static.line-scdn.net/liff/edge/versions/2.23.1/sdk.js"
-    ></script>
-
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <ViewTransitions />
   </head>
   <body class="app">
     <TopBar />
@@ -57,21 +47,18 @@ const { title } = Astro.props;
       <slot />
     </div>
     <TabBar />
+    <style>
+      .app {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .body {
+        flex: 1 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+    </style>
   </body>
 </html>
-
-<style>
-  .app {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-  .body {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-</style>
-
-<script></script>
