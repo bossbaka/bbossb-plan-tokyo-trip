@@ -12,8 +12,8 @@ export default defineConfig({
       injectRegister: "auto",
       registerType: "autoUpdate",
       manifest: {
-        name: "Trip Tokyo with My Mother",
-        short_name: "Trip Tokyo with My Mother",
+        name: "Tokyo with My Mother",
+        short_name: "Tokyo with My Mother",
         theme_color: "#ffffff",
         icons: [
           {

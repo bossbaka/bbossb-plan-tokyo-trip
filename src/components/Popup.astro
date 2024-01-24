@@ -11,7 +11,7 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     popovertargetaction="show"
     popovertarget={i}
     aria-haspopup="true"
-    aria-controls="popoverID"
+    aria-controls={i}
   >
     ดูแผนการเดินทางเพิ่มเติม
   </button>
@@ -37,7 +37,7 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
         popovertargetaction="show"
         popovertarget={lastObject}
         aria-haspopup="true"
-        aria-controls="popoverID"
+        aria-controls={i}
       >
         ดูแผนการเดินทางสำรอง
       </button>
