@@ -1,11 +1,12 @@
 ---
+// @ts-nocheck
 import { Image } from "astro:assets";
 import Popup from "./Popup.astro";
 import { BackupPlanData } from "../data/data";
 
 const { swiperData } = Astro.props;
 
-const updatedSwiperData = swiperData.map((item: any, index: number) => item);
+const updatedSwiperData = swiperData.map((item: any) => item);
 
 updatedSwiperData.push(BackupPlanData);
 ---
