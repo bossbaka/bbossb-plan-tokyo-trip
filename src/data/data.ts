@@ -298,7 +298,7 @@ const swiperData = [
     <span class="tag-duration">ประมาณ 40 นาที </span> 
     ถึงที่พักประมาณ
     <span class="tag-time">เวลา 22:16</span> 
-    <i>Check in ที่พัก Toyoko Inn Tokyo Akabane-eki Higashi-guchi</i>
+    Check in ที่พัก Toyoko Inn Tokyo Akabane-eki Higashi-guchi
     </div>
     </a>
 
@@ -602,7 +602,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
-    <i>ลงป้าย</i> &nbsp;
+    ลงป้าย &nbsp;
     <iconify-icon icon="ant-design:stop-twotone" width="30" height="30"></iconify-icon>
     Shimazuyashiki-mae No.18
     <a href="https://www.google.com/maps/search/?api=1&query=Shimazuyashiki-mae" class="open-map">
@@ -902,7 +902,6 @@ const swiperData = [
     </div>
 
     <div>
-    <span class="tag-time">เวลา </span>
     ขึ้นรถไฟสถานี 
     <a href="https://gala.co.jp/winter/thai/access-thai/" target="_blank" class="detail-map">
     Gala Yuzawa
@@ -921,7 +920,6 @@ const swiperData = [
     <a href="https://www.jreast.co.jp/e/stations/e625.html" target="_blank" class="detail-map">
     Kumagaya Station
     </a>
-    <span class="tag-time">เวลา </span>
     <a href="https://www.google.com/maps/dir/?api=1&origin=GALA+Yuzawa+Snow+Resort&destination=Kumagaya+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
@@ -935,7 +933,6 @@ const swiperData = [
     เปิดเส้นทาง GoogleMap
     </a>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
-    <span class="tag-time">เวลา </span>
     </div>
 
     <hr class="line">
@@ -945,7 +942,6 @@ const swiperData = [
     </div>
 
     <div>
-    <span class="tag-time">เวลา </span>
     ขึ้นรถไฟสถานี 
     <a href="https://gala.co.jp/winter/thai/access-thai/" target="_blank" class="detail-map">
     Gala Yuzawa
@@ -958,7 +954,6 @@ const swiperData = [
     <a href="https://www.jreast.co.jp/e/stations/e350.html" target="_blank" class="detail-map">
     Ōmiya Station
     </a>
-    <span class="tag-time">เวลา </span>
     <a href="https://www.google.com/maps/dir/?api=1&origin=GALA+Yuzawa+Snow+Resort&destination=Ōmiya+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
@@ -972,7 +967,6 @@ const swiperData = [
     เปิดเส้นทาง GoogleMap
     </a> 
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
-    <span class="tag-time">เวลา </span>
     </div>
 
     <div>
@@ -1240,26 +1234,59 @@ const swiperData = [
   },
 ];
 
-const travelData = [
+const InformationData = [
   {
-    day: "Sunday, 24 Mar. 2024",
-    location_name: "Kamakurakōkō-Mae Station",
+    infoname: "การเตรียมความพร้อมในการเข้าสนามบิน",
+    path: [
+      {
+        name: "เทคนิค ผ่านเครื่องสแกนที่สนามบินอย่างรวดเร็ว",
+        link: "https://spin9.me/2015/08/09/smoothly-go-through-airport-security/",
+      },
+    ],
   },
   {
-    day: "Monday, 25 Mar. 2024",
-    location_name: "Kamakurakōkō-Mae Station",
+    infoname: "สถานที่พัก Toyoko Inn Tokyo Akabane-eki Higashi-guchi",
+    path: [
+      {
+        name: "รวมข้อมูลเกี่ยวกับที่พัก",
+        link: "https://www.toyoko-inn.com/feature/?lcl_id=th",
+      },
+    ],
   },
   {
-    day: "Tuseday, 26 Mar. 2024",
-    location_name: "Kamakurakōkō-Mae Station",
+    infoname: "รวมข้อมูลเกี่ยวกับเครื่องบิน",
+    path: [
+      {
+        name: "รวมข้อมูลเกี่ยวกับสายการบิน AirJapan",
+        link: "https://www.flyairjapan.com/th",
+      },
+      {
+        name: "วิธีใช้ห้องน้ำบนเครื่องบิน เป็นคลิป VDO",
+        link: "https://www.facebook.com/reel/1433623607495212",
+      },
+    ],
   },
   {
-    day: "Wednesday, 27 Mar. 2024",
-    location_name: "Kamakurakōkō-Mae Station",
+    infoname: "เรื่องที่ควรรู้เกี่ยวกับญี่ปุ่น",
+    path: [
+      {
+        name: "5 เรื่องน่ารู้ การใช้ห้องน้ำในประเทศญี่ปุ่น",
+        link: "https://travel.trueid.net/detail/1q52wNPb0JbK",
+      },
+      {
+        name: "พิกัดหาถังขยะในญี่ปุ่น",
+        link: "https://chillchilljapan.com/japan-trash-bin/",
+      },
+    ],
   },
   {
-    day: "Thursday, 28 Mar. 2024",
-    location_name: "Kamakurakōkō-Mae Station",
+    infoname: "ประกันการเดินทาง SOMPO",
+    path: [
+      {
+        name: "เว็บไซต์ประกันเดินทาง SOMPO",
+        link: "https://traveljoy.sompo.co.th/",
+      },
+    ],
   },
 ];
 
@@ -1272,4 +1299,4 @@ const BackupPlanData = {
   `,
 };
 
-export { swiperData, travelData, BackupPlanData };
+export { swiperData, InformationData, BackupPlanData };

@@ -1,66 +1,11 @@
 ---
 import Accordion from "../components/Accordion.astro";
 import Layout from "../layouts/Layout.astro";
-
-const data = [
-  {
-    infoname: "การเตรียมความพร้อมในการเข้าสนามบิน",
-    path: [
-      {
-        name: "เทคนิค ผ่านเครื่องสแกนที่สนามบินอย่างรวดเร็ว",
-        link: "https://spin9.me/2015/08/09/smoothly-go-through-airport-security/",
-      },
-    ],
-  },
-  {
-    infoname: "สถานที่พัก Toyoko Inn Tokyo Akabane-eki Higashi-guchi",
-    path: [
-      {
-        name: "รวมข้อมูลเกี่ยวกับที่พัก",
-        link: "https://www.toyoko-inn.com/feature/?lcl_id=th",
-      },
-    ],
-  },
-  {
-    infoname: "รวมข้อมูลเกี่ยวกับเครื่องบิน",
-    path: [
-      {
-        name: "รวมข้อมูลเกี่ยวกับสายการบิน AirJapan",
-        link: "https://www.flyairjapan.com/th",
-      },
-      {
-        name: "วิธีใช้ห้องน้ำบนเครื่องบิน เป็นคลิป VDO",
-        link: "https://www.facebook.com/reel/1433623607495212",
-      },
-    ],
-  },
-  {
-    infoname: "เรื่องที่ควรรู้เกี่ยวกับญี่ปุ่น",
-    path: [
-      {
-        name: "5 เรื่องน่ารู้ การใช้ห้องน้ำในประเทศญี่ปุ่น",
-        link: "https://travel.trueid.net/detail/1q52wNPb0JbK",
-      },
-      {
-        name: "พิกัดหาถังขยะในญี่ปุ่น",
-        link: "https://chillchilljapan.com/japan-trash-bin/",
-      },
-    ],
-  },
-  {
-    infoname: "ประกันการเดินทาง SOMPO",
-    path: [
-      {
-        name: "เว็บไซต์ประกันเดินทาง SOMPO",
-        link: "https://traveljoy.sompo.co.th/",
-      },
-    ],
-  },
-];
+import { InformationData } from "../data/data";
 ---
 
 <Layout title="Information - Trip Tokyo with Mother">
-  {data.map((item) => <Accordion item={item} />)}
+  {InformationData.map((item) => <Accordion item={item} />)}
 </Layout>
 
 <style></style>

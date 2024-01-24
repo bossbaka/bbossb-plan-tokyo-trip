@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: "IBMPlexSansThaiLooped";
-  src: url("/fonts/IBMPlexSansThaiLooped-Regular.ttf") format("ttf");
+  src: url("/fonts/IBMPlexSansThaiLooped-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -32,14 +32,10 @@
   margin: 0;
   box-sizing: border-box;
   overflow: unset;
-  /* :has(:popover-open) {
-    overflow: hidden;
-  } */
 }
 
 html {
-  font-family: "LINESeedSans", "IBM Plex Sans Thai Looped", "LINESeedSansJP",
-    system-ui, sans-serif;
+  font-family: "LINESeedSans", "IBMPlexSansThaiLooped", system-ui, sans-serif;
   background-color: var(--main-background-color);
   color: var(--main-text-color);
   font-size: 14px;
@@ -66,7 +62,7 @@ a {
 }
 
 button {
-  font-family: "LINESeedSans", "IBM Plex Sans Thai Looped";
+  font-family: "LINESeedSans", "IBMPlexSansThaiLooped";
   background-color: var(--main-button-color);
   border: none;
   padding: 5px 12px;
@@ -75,7 +71,7 @@ button {
   margin: 10px 0px;
 }
 
-.border-top {
+.tabbar {
   border-top: solid 1px var(--main-text-color);
   padding: 10px 10px 5px 10px;
   position: fixed;
@@ -85,7 +81,7 @@ button {
   background-color: var(--main-background-color);
 }
 
-.border-bottom {
+.navbar {
   border-bottom: solid 1px var(--main-text-color);
   padding: 10px;
   position: fixed;
