@@ -27,8 +27,10 @@ const tab = [
               href={item.path}
               class={currentPath === item.path ? "active" : ""}
             >
-              <Icon name={item.icon} />
-              <div>{item.title}</div>
+              <div class="tabbar-content">
+                <Icon name={item.icon} />
+                {item.title}
+              </div>
             </a>
           </div>
         ))
@@ -63,5 +65,11 @@ const tab = [
 
   .tabbar-item .active {
     color: #fff;
+  }
+
+  .tabbar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 </style>

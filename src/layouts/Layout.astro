@@ -13,6 +13,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+import { css } from "../../styled-system/css";
+import { stack, vstack, hstack } from "../../styled-system/patterns";
 ---
 
 <!doctype html>
@@ -39,7 +42,7 @@ const { title } = Astro.props;
       src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
     ></script>
 
-    <script src="/src/pwa.ts"></script>
+    <script is:inline src="/src/pwa.ts"></script>
     {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
 
     <meta name="generator" content={Astro.generator} />
@@ -48,24 +51,9 @@ const { title } = Astro.props;
 
     <ViewTransitions />
   </head>
-  <body class="app">
+  <body>
     <TopBar />
-    <div class="body">
-      <slot />
-    </div>
+    <slot />
     <TabBar />
-    <style>
-      .app {
-        height: 100dvh;
-        display: flex;
-        flex-direction: column;
-      }
-      .body {
-        flex: 1 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-    </style>
   </body>
 </html>
