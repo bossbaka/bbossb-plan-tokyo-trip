@@ -1267,7 +1267,7 @@ const InformationData = [
     ],
   },
   {
-    infoname: "เรื่องที่ควรรู้เกี่ยวกับญี่ปุ่น",
+    infoname: "รวมเรื่องที่ควรรู้เกี่ยวกับญี่ปุ่น",
     path: [
       {
         name: "5 เรื่องน่ารู้ การใช้ห้องน้ำในประเทศญี่ปุ่น",
@@ -1276,6 +1276,40 @@ const InformationData = [
       {
         name: "พิกัดหาถังขยะในญี่ปุ่น",
         link: "https://chillchilljapan.com/japan-trash-bin/",
+      },
+      {
+        name: "เงินญี่ปุ่นมีกี่แบบ",
+        link: "https://matcha-jp.com/th/1359",
+      },
+    ],
+  },
+  {
+    infoname: "รวมเว็บพยากรณ์อากาศที่ญี่ปุ่น",
+    path: [
+      {
+        name: "Weathernews",
+        link: "https://weathernews.jp/",
+      },
+      {
+        name: "AccuWeather",
+        link: "https://www.accuweather.com/",
+      },
+      {
+        name: "Windy",
+        link: "https://www.windy.com/",
+      },
+      {
+        name: "Yahoo Japan",
+        link: "https://weather.yahoo.co.jp/weather/",
+      },
+    ],
+  },
+  {
+    infoname: "แอปเรียกแท็กซี่ในญี่ปุ่น",
+    path: [
+      {
+        name: "6 แอปเรียกแท็กซี่ในญี่ปุ่น",
+        link: "https://matcha-jp.com/th/9586",
       },
     ],
   },
