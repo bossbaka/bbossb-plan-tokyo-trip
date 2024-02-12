@@ -552,7 +552,8 @@ const swiperData = [
     ซื้อข้าวกล่องไปกินบนรถไฟ
     <iconify-icon icon="mdi:cash" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
-    <a href="https://www.google.com/maps/search/?api=1&query=food+Shinjuku+Station" class="open-map">
+    <a href="https://foods.jr-cross.co.jp/ekiben/search?Station=133" class="open-map">ดูเมนูอาหาร</a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Ekibenya+Itadaki" class="open-map">
     ค้นหาร้านอาหาร
     </a>
     </div>
@@ -1301,6 +1302,59 @@ const InformationData = [
       {
         name: "Yahoo Japan",
         link: "https://weather.yahoo.co.jp/weather/",
+      },
+      {
+        name: "พยากรณ์ซากุระ",
+        link: "https://s.n-kishou.co.jp/w/sp/sakura/sakura_top.html?",
+      },
+      {
+        name: "พยากรณ์ซากุระ",
+        link: "https://weathernews.jp/sakura/",
+      },
+    ],
+  },
+  {
+    infoname: "เว็บจองร้านอาหารที่ญี่ปุ่น",
+    path: [
+      {
+        name: "Tabelog",
+        link: "https://tabelog.com/en/",
+      },
+    ],
+  },
+  {
+    infoname: "วิธีรับตั๋ว JR Wind Pass - PDF",
+    path: [
+      {
+        name: "วิธีรับตั๋ว JR Wind Pass",
+        link: "https://www.jreast.co.jp/e/downloads/pdf/passport_operation_e.pdf",
+      },
+    ],
+  },
+  {
+    infoname: "รวมแผนที่สถานีรถไฟสาย JR",
+    path: [
+      {
+        name: "รวมแผนที่สถานีรถไฟสาย JR",
+        link: "https://www.jreast.co.jp/e/stations/index.html",
+      },
+    ],
+  },
+  {
+    infoname: "ข้อมูลรถบัสที่ฟูจิ ทะเลสาบคาวากุจิ",
+    path: [
+      {
+        name: "ข้อมูลรถบัสที่ฟูจิ ทะเลสาบคาวากุจิ",
+        link: "https://bus.fujikyu.co.jp/rosen/shuyuomuni/",
+      },
+    ],
+  },
+  {
+    infoname: "แอปฝากกระเป๋า",
+    path: [
+      {
+        name: "แอปฝากกระเป๋า",
+        link: "https://cloak.ecbo.io/",
       },
     ],
   },
