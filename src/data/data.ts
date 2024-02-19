@@ -19,6 +19,7 @@ const swiperData = [
     `,
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 18:30</span>
     ออกเดินทางจากวิหารแดง &nbsp;
     <iconify-icon icon="ph:car" width="30" height="30"></iconify-icon>
@@ -31,23 +32,30 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>Check in Counter AirJapn 
-    สามารถ Check In ได้ก่อนล่วงหน้า 3 ชั่วโมง ควร 
+    <div>
+    <span class="tag-num">2.</span>
+    Check in Counter AirJapn (K ชั้น 4)
+    สามารถ Check In ได้ก่อนล่วงหน้า 3 ชั่วโมง Counter เปิดประมาณ 20:45 
     <span class="tag-duration">Check In ตอน 21:00</span></div> 
     
     <hr class="line">
     
-    <div>เข้าด่านตรวจ 
+    <div>
+    <span class="tag-num">3.</span>
+    เข้าด่านตรวจ 
     <iconify-icon icon="mdi:account-tie-hat-outline" width="30" height="30"></iconify-icon>
     </div>
     
     <hr class="line">
     
-    <div>ไป Gate รอเตรียมขึ้นเครื่องบิน </div>
+    <div>
+    <span class="tag-num">4.</span>
+    ไป Gate รอเตรียมขึ้นเครื่องบิน </div>
    
     <hr class="line">
    
     <div>
+    <span class="tag-num">5.</span>
     เครื่องบินออก 
     <iconify-icon icon="mdi:airplane-takeoff" width="30" height="30"></iconify-icon>
     <span class="tag-time">00:15 น. วันอาทิตย์ที่ 24 </span>
@@ -75,6 +83,7 @@ const swiperData = [
     `,
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 00:15</span>
     อยู่บนเครื่องบิน AirJapan NQ002
     <iconify-icon icon="mdi:seat-passenger" width="30" height="30"></iconify-icon>
@@ -88,11 +97,14 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เข้าด่านตรวจคนเข้าเมือง Immigration แสดง Passport กับสแกน QR Code</div> 
+    <div>
+    <span class="tag-num">2.</span>
+    เข้าด่านตรวจคนเข้าเมือง Immigration แสดง Passport กับสแกน QR Code</div> 
     
     <hr class="line">
    
     <div>
+    <span class="tag-num">3.</span>
     ไปหยิบกระเป๋าที่รางสายพาน  
     <iconify-icon icon="mdi:bag-checked" width="30" height="30"></iconify-icon>
     </div>
@@ -100,6 +112,7 @@ const swiperData = [
     <hr class="line">
    
     <div>
+    <span class="tag-num">4.</span>
     เข้าด่านกรมศุลกากร Customs สแกน QR Code &nbsp;
     <iconify-icon icon="fluent-emoji-high-contrast:customs" width="30" height="30"></iconify-icon>
     </div>
@@ -107,6 +120,7 @@ const swiperData = [
     <hr class="line">
    
     <div>
+    <span class="tag-num">5.</span>
     ซื้อ IC Card Welcome Suica และเติมเงินเข้า IC Card &nbsp;
     <a href="https://www.jreast.co.jp/e/customer_support/service_center.html" target="_blank" class="open-map">
     ข้อมูลตำแหน่งที่ซื้อ IC Card
@@ -117,6 +131,7 @@ const swiperData = [
     <hr class="line">
     
     <div>
+    <span class="tag-num">6.</span>
     <span class="tag-time">เวลา 11:22</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.narita-airport.jp/en/access/train" target="_blank" class="detail-map">
@@ -130,14 +145,16 @@ const swiperData = [
     Nihombashi Station 
     </a>
     <span class="tag-time">เวลา 12:29</span>
-    <a href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+1&destination=Nihombashi+Station&travelmode=transit" class="open-map">
+    <a href="https://www.google.com/maps/dir/?api=1&origin=Narita+Airport+Terminal+1+Station&destination=Nihombashi+Station&travelmode=transit" class="open-map">
     เปิดเส้นทาง GoogleMap
     </a>
     </div>
 
     <hr class="line">
     
-    <div>เดิน 
+    <div>
+    <span class="tag-num">7.</span>
+    เดิน 
     <span class="tag-duration"> 40 นาที 750 เมตร </span> 
     <iconify-icon icon="mdi:bag-suitcase-outline" width="30" height="30"></iconify-icon>
     ฝากกระเป๋าที่ SAGAWA EXPRESS TOKYO SERVICE CENTER
@@ -154,6 +171,7 @@ const swiperData = [
     <hr class="line">
     
     <div>
+    <span class="tag-num">8.</span>
     ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
     <a href="https://www.google.com/maps/search/?api=1&query=food+Tokyo+Station" class="open-map">
@@ -166,7 +184,9 @@ const swiperData = [
 
     <hr class="line">
     
-    <div>เดินไปขึ้นรถไฟ
+    <div>
+    <span class="tag-num">9.</span>
+    เดินไปขึ้นรถไฟ
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ph:train" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 20 นาที </span> 
@@ -175,6 +195,7 @@ const swiperData = [
     <hr class="line">
     
     <div>
+    <span class="tag-num">10.</span>
     <span class="tag-time">เวลา 14:38</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
@@ -199,7 +220,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินถ่ายรูป &nbsp;
+    <div>
+    <span class="tag-num">11.</span>
+    เดินถ่ายรูป &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
     <span class="tag-time">เวลา 17:12</span>
@@ -208,6 +231,7 @@ const swiperData = [
     <hr class="line">
     
     <div>
+    <span class="tag-num">12.</span>
     ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
     <a href="https://www.google.com/maps/search/?api=1&query=food+Kamakurakōkō-Mae+Station" class="open-map">
@@ -220,7 +244,9 @@ const swiperData = [
     
     <hr class="line">
 
-    <div>เดินไปขึ้นรถไฟ
+    <div>
+    <span class="tag-num">13.</span>
+    เดินไปขึ้นรถไฟ
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ph:train" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 30 นาที </span> 
@@ -229,6 +255,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">14.</span>
     <span class="tag-time">เวลา 19:00</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.enoden.co.jp/en/train/station/shichirigahama/" target="_blank" class="detail-map">
@@ -253,6 +280,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">15.</span>
     รับตั๋ว &nbsp;
     <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon> &nbsp;
     JR Tokyo Wind Pass ที่ตู้อัตโนมัติ 
@@ -265,7 +293,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>ไปรับกระเป๋าที่ฝาก
+    <div>
+    <span class="tag-num">16.</span>
+    ไปรับกระเป๋าที่ฝาก
     <iconify-icon icon="mdi:bag-suitcase-outline" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 30 นาที </span> 
     <span class="tag-time">เวลา 21:00</span> </div>
@@ -273,6 +303,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">17.</span>
     <span class="tag-time">เวลา 21:20</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
@@ -292,7 +323,9 @@ const swiperData = [
     <hr class="line">
 
     <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
-    <div>เดินจากสถานีไปที่พัก 
+    <div>
+    <span class="tag-num">18.</span>
+    เดินจากสถานีไปที่พัก 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 40 นาที </span> 
@@ -304,7 +337,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div> พรุ่งนี้ตื่นตี 5 </div>
+    <div>
+    <span class="tag-num">19.</span>
+    พรุ่งนี้ตื่นตี 5 </div>
     `,
     locations: [
       {
@@ -328,6 +363,7 @@ const swiperData = [
     `,
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 06:32</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
@@ -347,6 +383,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">2.</span>
     ซื้อตั๋ว &nbsp;
     <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon>
     KAWAGOE DISCOUNT PASS Premium 2 ใบ
@@ -361,6 +398,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">3.</span>
     <span class="tag-time">เวลา 07:15</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.tobu.co.jp/th/service/station/7105.html" target="_blank" class="detail-map">
@@ -380,6 +418,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">4.</span>
     ทานอาหาร
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
     <a href="https://www.google.com/maps/search/?api=1&query=food+Kawagoe+Station" class="open-map">
@@ -392,7 +431,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินไปจุดขึ้นรถบัส
+    <div>
+    <span class="tag-num">5.</span>
+    เดินไปจุดขึ้นรถบัส
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="tabler:bus" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 10 นาที </span> 
@@ -404,6 +445,7 @@ const swiperData = [
     <hr class="line">
   
     <div>
+    <span class="tag-num">6.</span>
     ลงป้าย &nbsp;
     <iconify-icon icon="ant-design:stop-twotone" width="30" height="30"></iconify-icon>
     &nbsp; W7 Ichibangai Temple &nbsp;
@@ -415,6 +457,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">7.</span>
     เดินไปร้าน
     Vivian Kimono Rental
     <a href="https://coedovivian.com/" target="_blank" class="open-map">
@@ -432,6 +475,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">8.</span>
     <a class="open-map" href="https://www.google.com/maps/d/viewer?mid=1Qov_nooz0wjW0uiYwEjaGL-bc2FLs8c&femb=1&ll=35.92402345931941%2C139.48575520000003&z=16" target="_blank">
     ดูแผนการเดินทางเมือง Kawagoe
     </a>
@@ -440,6 +484,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">9.</span>
     ขากลับจาก W17 Kawagoe Hikawa Shrine 
     ให้ลงป้าย &nbsp;
     <iconify-icon icon="ant-design:stop-twotone" width="30" height="30"></iconify-icon>
@@ -453,6 +498,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">10.</span>
     <span class="tag-time">เวลา 17:59</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.tobu.co.jp/th/service/station/7315.html" target="_blank" class="detail-map">
@@ -472,6 +518,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">11.</span>
     ไปสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
@@ -484,7 +531,9 @@ const swiperData = [
     <hr class="line">
 
     <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
-    <div>เดินจากสถานีไปที่พัก 
+    <div>
+    <span class="tag-num">12.</span>
+    เดินจากสถานีไปที่พัก 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
     </div>
@@ -492,7 +541,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div> พรุ่งนี้ตื่นตี 5 </div>
+    <div>    
+    <span class="tag-num">13.</span>
+    พรุ่งนี้ตื่นตี 5 </div>
     `,
     locations: [
       {
@@ -527,6 +578,7 @@ const swiperData = [
     `,
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 06:03</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
@@ -549,6 +601,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">2.</span>
     ซื้อข้าวกล่องไปกินบนรถไฟ
     <iconify-icon icon="mdi:cash" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fluent:food-20-regular" width="30" height="30"></iconify-icon>
@@ -562,6 +615,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">3.</span>
     <span class="tag-time">เวลา 07:30</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e866.html" target="_blank" class="detail-map">
@@ -590,7 +644,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินไปขึ้นรถบัส สายสี Red
+    <div>
+    <span class="tag-num">4.</span>
+    เดินไปขึ้นรถบัส สายสี Red
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="tabler:bus" width="30" height="30"></iconify-icon>
 
@@ -603,6 +659,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">5.</span>
     ลงป้าย &nbsp;
     <iconify-icon icon="ant-design:stop-twotone" width="30" height="30"></iconify-icon>
     Shimazuyashiki-mae No.18
@@ -614,7 +671,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินไปถ่ายรูปที่ Nagasaki Park &nbsp;
+    <div>
+    <span class="tag-num">6.</span>
+    เดินไปถ่ายรูปที่ Nagasaki Park &nbsp;
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ระยะทางเดิน 300 เมตร</span>
@@ -625,7 +684,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินไป 
+    <div>
+    <span class="tag-num">7.</span>
+    เดินไป 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     Oishi Park Café 
     ผ่านร้านขนมปัง Lake Bake Cafe
@@ -642,7 +703,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินไปขึ้นรถบัสเตรียมกลับสถานี Kawaguchiko Station
+    <div>
+    <span class="tag-num">8.</span>
+    เดินไปขึ้นรถบัสเตรียมกลับสถานี Kawaguchiko Station
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="tabler:bus" width="30" height="30"></iconify-icon>
     <span class="tag-duration">เวลา 13:30 ควรยืนรอขึ้นรถบัส  </span> 
@@ -651,6 +714,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">9.</span>
     <span class="tag-time">เวลา 15:03</span>
     ขึ้นรถไฟสถานี 
     <span class="detail-map">
@@ -679,7 +743,9 @@ const swiperData = [
     
     <hr class="line">
 
-    <div>เดินไปขึ้นรถไฟ
+    <div>
+    <span class="tag-num">10.</span>
+    เดินไปขึ้นรถไฟ
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ph:train" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 7 นาที 450 เมตร</span> 
@@ -691,6 +757,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">11.</span>
     <span class="tag-time">เวลา 17:12</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.tokyometro.jp/lang_th/station/shinjuku-sanchome/index.html" target="_blank" class="detail-map">
@@ -714,7 +781,9 @@ const swiperData = [
     
     <hr class="line">
 
-    <div>เดินถ่ายรูป ชมซากุระ &nbsp;
+    <div>
+    <span class="tag-num">12.</span>
+    เดินถ่ายรูป ชมซากุระ &nbsp;
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     </div>
@@ -722,6 +791,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">13.</span>
     กลับที่พัก มีทางเลือกสองทาง
     </div>   
 
@@ -774,6 +844,7 @@ const swiperData = [
 
 
     <div>
+    <span class="tag-num">14.</span>
     ไปสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
@@ -789,7 +860,9 @@ const swiperData = [
     <hr class="line">
 
     <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
-    <div>เดินจากสถานีไปที่พัก 
+    <div>
+    <span class="tag-num">15.</span>
+    เดินจากสถานีไปที่พัก 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
     </div>
@@ -797,7 +870,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div> พรุ่งนี้ตื่นตี 5 </div>
+    <div>
+    <span class="tag-num">16.</span>
+    พรุ่งนี้ตื่นตี 5 </div>
     `,
     locations: [
       {
@@ -827,6 +902,7 @@ const swiperData = [
     `,
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 06:03</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
@@ -849,6 +925,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">2.</span>
     <span class="tag-time">เวลา 06:44</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
@@ -871,6 +948,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">3.</span>
     ซื้อตั๋วกอนโดล่า 2 ใบ &nbsp;
     <iconify-icon icon="uil:ticket" width="30" height="30"></iconify-icon> &nbsp;
     <a href="https://gala.co.jp/winter/thai/charges-thai/" target="_blank" class="open-map">
@@ -890,7 +968,9 @@ const swiperData = [
 
     <hr class="line">
     
-    <div>ขึ้นกอดโดล่าเพื่อไปถ่ายรูปกับหิมะ &nbsp;
+    <div>
+    <span class="tag-num">4.</span>
+    ขึ้นกอดโดล่าเพื่อไปถ่ายรูปกับหิมะ &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     <span class="tag-duration">ประมาณ 1 ชั่วโมง </span>
     </div>
@@ -980,6 +1060,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">5.</span>
     ไปสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
     Akabane Station 
@@ -995,7 +1076,9 @@ const swiperData = [
     <hr class="line">
 
     <a href="https://www.google.com/maps/search/?api=1&query=Toyoko-Inn+東横INN赤羽駅東口">
-    <div>เดินจากสถานีไปที่พัก 
+    <div>
+    <span class="tag-num">6.</span>
+    เดินจากสถานีไปที่พัก 
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="fontisto:hotel" width="30" height="30"></iconify-icon>
     </div>
@@ -1003,7 +1086,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div> พรุ่งนี้ตื่นตี 5 </div>
+    <div> 
+    <span class="tag-num">7.</span>
+    พรุ่งนี้ตื่นตี 5 </div>
     `,
     locations: [
       {
@@ -1032,6 +1117,7 @@ const swiperData = [
 
     detailmore: `
     <div>
+    <span class="tag-num">1.</span>
     <span class="tag-time">เวลา 06:00</span>
     Check Out ออกจากที่พัก 
     </div>
@@ -1039,6 +1125,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">2.</span>
     <span class="tag-time">เวลา 06:26</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e34.html" target="_blank" class="detail-map">
@@ -1061,12 +1148,14 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">3.</span>
     เดินไปฝากกระเป๋าตู้ล็อกเกอร์
     </div>
 
     <hr class="line">
     
     <div>
+    <span class="tag-num">4.</span>
     <span class="tag-time">เวลา 07:09</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
@@ -1097,7 +1186,9 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>เดินถ่ายรูป &nbsp;
+    <div>
+    <span class="tag-num">5.</span>
+    เดินถ่ายรูป &nbsp;
     <iconify-icon icon="ion:camera-outline" width="30" height="30"></iconify-icon>
     &nbsp;
     ที่ Shukugawara Nikaryō Waterway
@@ -1110,6 +1201,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">6.</span>
     <span class="tag-time">เวลา 09:00</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/estation/stations/839.html" target="_blank" class="detail-map">
@@ -1141,6 +1233,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">7.</span>
     เดิน
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     ไปเอากระเป๋าที่ฝากไว้ตู้ล็อกเกอร์
@@ -1149,6 +1242,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">8.</span>
     <span class="tag-time">เวลา 11:03</span>
     ขึ้นรถไฟสถานี 
     <a href="https://www.jreast.co.jp/e/stations/e1039.html" target="_blank" class="detail-map">
@@ -1170,23 +1264,31 @@ const swiperData = [
 
     <hr class="line">
 
-    <div>Check in Counter AirJapn 
+    <div>
+    <span class="tag-num">9.</span>
+    Check in Counter AirJapn (E ชั้น 4 ฝั่ง south)
+    แต่ถ้าได้ boarding pass ให้ไป D เพื่อ self bag drop
     สามารถ Check In ได้ก่อนล่วงหน้า 3 ชั่วโมง ควร 
     <span class="tag-duration">Check In ตอน 14:30</span></div> 
     
     <hr class="line">
     
-    <div>เข้าด่านตรวจ 
+    <div>
+    <span class="tag-num">10.</span>
+    เข้าด่านตรวจ 
     <iconify-icon icon="mdi:account-tie-hat-outline" width="30" height="30"></iconify-icon>
     </div>
     
     <hr class="line">
     
-    <div>ไป Gate รอเตรียมขึ้นเครื่องบิน </div>
+    <div>
+    <span class="tag-num">11.</span>
+    ไป Gate รอเตรียมขึ้นเครื่องบิน </div>
    
     <hr class="line">
    
     <div>
+    <span class="tag-num">12.</span>
     เครื่องบินออก 
     <iconify-icon icon="mdi:airplane-takeoff" width="30" height="30"></iconify-icon>
     <span class="tag-time">17:55 น.</span>
@@ -1195,6 +1297,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">13.</span>
     <span class="tag-time">เวลา 17:55</span>
     อยู่บนเครื่องบิน AirJapan NQ001
     <iconify-icon icon="mdi:seat-passenger" width="30" height="30"></iconify-icon>
@@ -1206,12 +1309,14 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">14.</span>
     เข้าด่านตรวจคนเข้าเมือง Immigration แสดง Passport
     </div>
 
     <hr class="line">
 
     <div>
+    <span class="tag-num">15.</span>
     ไปหยิบกระเป๋าที่รางสายพาน  
     <iconify-icon icon="mdi:bag-checked" width="30" height="30"></iconify-icon>
     </div>
@@ -1219,6 +1324,7 @@ const swiperData = [
     <hr class="line">
 
     <div>
+    <span class="tag-num">16.</span>
     เดินทางกลับบ้านวิหารแดง
     </div>
 

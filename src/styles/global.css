@@ -34,6 +34,12 @@
   overflow: unset;
 }
 
+@media only screen and (min-width: 393px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 html {
   font-family: "LINESeedSans", "IBMPlexSansThaiLooped", system-ui, sans-serif;
   background-color: var(--main-background-color);
@@ -96,6 +102,7 @@ button {
 .tag-line,
 .detail-map,
 .open-map,
+.tag-num,
 .tag-duration {
   border-radius: 5px;
   padding: 3px 8px;
@@ -105,6 +112,10 @@ button {
   text-align: center;
   height: 35px;
   font-weight: 600;
+}
+
+.tag-num {
+  background-color: #9c9c9c;
 }
 
 .tag-time {
