@@ -202,6 +202,14 @@ button {
   background-color: rgb(237, 60, 45);
 }
 
+.hs {
+  background-color: rgb(60, 97, 186);
+}
+
+.jk {
+  background-color: rgb(0, 172, 209);
+}
+
 .line {
   border: 1px solid #525252a6;
   margin: 10px 0;

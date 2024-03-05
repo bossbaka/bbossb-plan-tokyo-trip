@@ -16,10 +16,10 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@iconify-icon/react": "^1.0.8",
-    "@vite-pwa/astro": "^0.2.0",
-    "astro-icon": "1.0.2",
-    "prettier": "^3.2.4",
-    "prettier-plugin-astro": "^0.12.3"
+    "@iconify-icon/react": "^2.0.1",
+    "@vite-pwa/astro": "^0.3.0",
+    "astro-icon": "1.1.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-astro": "^0.13.0"
   }
 }

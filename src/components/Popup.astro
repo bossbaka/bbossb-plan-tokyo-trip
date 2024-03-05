@@ -1,9 +1,7 @@
 ---
 // @ts-nocheck
-const { i, items, updatedSwiperData } = Astro.props;
+const { i, items } = Astro.props;
 import { Icon } from "astro-icon/components";
-
-const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
 ---
 
 <div>
@@ -29,41 +27,6 @@ const lastObject = updatedSwiperData[updatedSwiperData.length - 1];
     <div class="content-popover" set:html={items.detailmore} />
   </div>
 </div>
-
-{
-  i === updatedSwiperData.length - 6 && (
-    <>
-      <button
-        popovertargetaction="show"
-        popovertarget={lastObject}
-        aria-haspopup="true"
-        aria-controls={i}
-      >
-        ดูแผนการเดินทางสำรอง
-      </button>
-      <div
-        popover
-        id={lastObject}
-        class="popoverID"
-        role="dialog"
-        aria-modal="true"
-      >
-        <div class="popover-content">
-          <div class="section-header">
-            <span>
-              <h3>แผนการเดินทางสำรอง {lastObject.day}</h3>
-            </span>
-            <button popovertarget={lastObject} popovertargetaction="hide">
-              <Icon name="mdi:close-thick" />
-            </button>
-          </div>
-
-          <div class="content-popover" set:html={lastObject.detailmore} />
-        </div>
-      </div>
-    </>
-  )
-}
 
 <style>
   [data-icon] {

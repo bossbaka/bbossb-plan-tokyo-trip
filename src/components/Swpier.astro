@@ -2,13 +2,7 @@
 // @ts-nocheck
 import { Image } from "astro:assets";
 import Popup from "./Popup.astro";
-import { BackupPlanData } from "../data/data";
-
 const { swiperData } = Astro.props;
-
-const updatedSwiperData = swiperData.map((item: any) => item);
-
-updatedSwiperData.push(BackupPlanData);
 ---
 
 <div>
@@ -21,11 +15,7 @@ updatedSwiperData.push(BackupPlanData);
           <div set:html={items.detail} />
         </div>
         <div class="button">
-          <Popup
-            items={items}
-            i={index}
-            updatedSwiperData={updatedSwiperData}
-          />
+          <Popup items={items} i={index} />
         </div>
 
         <div class="box-img">
