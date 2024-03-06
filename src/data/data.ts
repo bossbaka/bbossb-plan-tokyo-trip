@@ -996,13 +996,17 @@ const swiperData = [
 
     <div>
     <span class="tag-num">3.</span>
-    ไปทาง East Exit เพื่อไปขึ้น Shuttle Bus 
+    ไปทาง East Exit เพื่อไปขึ้น Shuttle Bus ไป Ishiuchi Maruyama
     <iconify-icon icon="tabler:walk" width="30" height="30"></iconify-icon>
     <iconify-icon icon="tabler:bus" width="30" height="30"></iconify-icon>
+    &nbsp;
     รถออกเวลา
     <span class="tag-time">เวลา 08:20</span>
     <a href="https://ishiuchi.or.jp/wordpress/wp-content/uploads/2023/12/5b4b3fb933cc0c66fe9b52d97cc87b1a-scaled.jpg" class="open-map">
     ตารางเวลารถบัส
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&query=Ishiuchi+Maruyama+Ski+Resort" class="open-map">
+    เปิดเส้นทาง GoogleMap
     </a>
     </div>
     
